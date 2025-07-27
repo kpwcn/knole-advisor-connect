@@ -19,20 +19,16 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-background border-b border-border sticky top-0 z-50 backdrop-blur-sm bg-background/95" role="banner">
+    <header className="bg-background border-b border-border" role="banner">
       <nav className="max-w-container mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-12">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 focus-visible:focus">
+          <Link to="/" className="flex items-center focus-visible:focus">
             <img 
               src="/lovable-uploads/76baaf86-35a7-4e49-aece-2af7a1c25795.png" 
               alt="Knole Advisory Logo" 
-              className="h-10 w-10 rounded-full"
+              className="h-8 w-8 rounded-full"
             />
-            <div className="hidden sm:block">
-              <span className="text-xl font-heading font-bold text-primary">Knole Advisory</span>
-              <p className="text-sm text-muted-foreground hidden md:block">Student Finance & Consulting Society</p>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}

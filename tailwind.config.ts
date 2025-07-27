@@ -60,8 +60,9 @@ export default {
 				}
 			},
 			fontFamily: {
-				heading: 'var(--font-heading)',
-				body: 'var(--font-body)'
+				heading: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+				body: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+				sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif']
 			},
 			maxWidth: {
 				container: 'var(--container-max)'
