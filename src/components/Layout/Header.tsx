@@ -27,20 +27,20 @@ const Header = () => {
             <img 
               src="/lovable-uploads/76baaf86-35a7-4e49-aece-2af7a1c25795.png" 
               alt="Knole Advisory Logo" 
-              className="h-8 w-8 rounded-full"
+              className="h-10 w-10 rounded-full"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
                 className={`text-sm font-medium transition-smooth px-3 py-2 rounded-md focus-visible:focus ${
                   isActive(item.href)
-                    ? 'text-primary bg-primary/10'
-                    : 'text-foreground hover:text-primary hover:bg-accent/50'
+                    ? 'text-foreground font-semibold'
+                    : 'text-foreground hover:text-foreground/80'
                 }`}
                 aria-current={isActive(item.href) ? 'page' : undefined}
               >
@@ -49,7 +49,7 @@ const Header = () => {
             ))}
             <Link
               to="/membership"
-              className="university-btn-primary ml-4"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-1.5 rounded-md text-sm font-medium transition-smooth ml-4"
               id="header-join-cta"
             >
               Join Now
