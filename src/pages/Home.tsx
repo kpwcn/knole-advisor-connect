@@ -47,30 +47,39 @@ const Home = () => {
   return (
     <Layout title="Knole Advisory - Student Finance & Consulting Society">
       {/* Hero Section */}
-      <section className="relative bg-cover bg-center bg-no-repeat text-primary-foreground py-20 lg:py-28 min-h-[70vh] flex items-center" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80)'}}>
-        <div className="absolute inset-0 bg-primary/80"></div>
-        <div className="relative max-w-container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto animate-fade-in">
+      <section className="bg-gradient-university text-primary-foreground py-20 lg:py-28">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
             {/* CMS-edit-start::hero-title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight opacity-0 animate-[fade-in_1s_ease-out_0.3s_forwards]">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
               Knole Advisory – Student Finance & Consulting Society
             </h1>
             {/* CMS-edit-end */}
             
             {/* CMS-edit-start::hero-subtitle */}
-            <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed opacity-0 animate-[fade-in_1s_ease-out_0.6s_forwards]">
+            <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
               Empowering the next generation of finance and consulting professionals through 
               education, networking, and real-world experience.
             </p>
             {/* CMS-edit-end */}
 
-            <div className="flex justify-center opacity-0 animate-[fade-in_1s_ease-out_0.9s_forwards]">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/membership">
                 <Button 
                   id="join-cta"
-                  className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 hover:scale-105 px-6 py-2.5 text-base font-semibold transition-all duration-300"
+                  size="lg"
+                  className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8 py-3 text-lg font-semibold"
                 >
                   Join Our Society
+                </Button>
+              </Link>
+              <Link to="/events">
+                <Button 
+                  variant="outline"
+                  size="lg"
+                  className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-3 text-lg font-semibold"
+                >
+                  View Events
                 </Button>
               </Link>
             </div>
@@ -82,7 +91,7 @@ const Home = () => {
       <section className="py-16 bg-secondary/50">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center university-card hover-scale opacity-0 animate-[fade-in_0.8s_ease-out_1.2s_forwards]">
+            <div className="text-center university-card">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                 <Users size={32} className="text-primary" />
               </div>
@@ -94,7 +103,7 @@ const Home = () => {
               {/* CMS-edit-end */}
             </div>
 
-            <div className="text-center university-card hover-scale opacity-0 animate-[fade-in_0.8s_ease-out_1.4s_forwards]">
+            <div className="text-center university-card">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-university-blue/10 rounded-full mb-4">
                 <Calendar size={32} className="text-university-blue" />
               </div>
@@ -106,7 +115,7 @@ const Home = () => {
               {/* CMS-edit-end */}
             </div>
 
-            <div className="text-center university-card hover-scale opacity-0 animate-[fade-in_0.8s_ease-out_1.6s_forwards]">
+            <div className="text-center university-card">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-university-gold/10 rounded-full mb-4">
                 <Briefcase size={32} className="text-university-gold" />
               </div>
