@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Amplitude:wght@300;400;500;600;700&display=swap');
 
 /* Knole Advisory Design System - Logo Color Theme */
 
@@ -25,8 +26,8 @@
     --muted-foreground: 255 255 255;  /* Pure white */
     
     /* University Theme Colors */
-    --university-gold: 230 197 71;
-    --university-blue: 74 111 165;
+    --university-gold: 255 255 255;
+    --university-blue: 255 255 255;
     
     /* UI Elements */
     --card: 8 48 38;  /* Darker version of logo color */
@@ -50,8 +51,8 @@
     --shadow-strong: 0 10px 25px rgb(var(--primary) / 0.15);
     
     /* Typography - Helvetica Family */
-    --font-heading: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    --font-body: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    --font-heading: 'Amplitude', 'Helvetica Neue', 'Arial', sans-serif;
+    --font-body: 'Amplitude', 'Helvetica Neue', 'Arial', sans-serif;
     
     /* Spacing & Layout */
     --radius: 0.75rem;
