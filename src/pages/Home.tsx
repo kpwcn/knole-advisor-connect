@@ -57,14 +57,14 @@ const Home = () => {
           playsInline
           aria-hidden="true"
         >
-          <source src="/public/videos/london.mp4" type="video/mp4" />
-          <source src="/videos/london.mp4" type="video/mp4" />
+          <source src="/videos/london 2.mp4" type="video/mp4" />
+          <source src="/public/videos/london 2.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
-          <div className="absolute inset-0 bg-gradient-university" />
+          <div className="absolute inset-0 bg-primary/10 z-10" />
         </video>
         
         {/* Green Overlay */}
-        <div className="absolute inset-0 bg-primary/30 z-10" />
+        <div className="absolute inset-0 bg-primary/10 z-10" />
         
         <div className="relative z-20 max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
