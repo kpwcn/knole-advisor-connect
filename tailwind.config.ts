@@ -19,44 +19,44 @@ export default {
 		},
 		extend: {
 			colors: {
-				border: 'var(--border)',
-				input: 'var(--input)',
-				ring: 'var(--ring)',
-				background: 'var(--background)',
-				foreground: 'var(--foreground)',
+				border: 'rgb(var(--border))',
+				input: 'rgb(var(--input))',
+				ring: 'rgb(var(--ring))',
+				background: 'rgb(var(--background))',
+				foreground: 'rgb(var(--foreground))',
 				primary: {
-					DEFAULT: 'var(--primary)',
-					foreground: 'var(--primary-foreground)',
-					light: 'var(--primary-light)',
-					dark: 'var(--primary-dark)'
+					DEFAULT: 'rgb(var(--primary))',
+					foreground: 'rgb(var(--primary-foreground))',
+					light: 'rgb(var(--primary-light))',
+					dark: 'rgb(var(--primary-dark))'
 				},
 				secondary: {
-					DEFAULT: 'var(--secondary)',
-					foreground: 'var(--secondary-foreground)'
+					DEFAULT: 'rgb(var(--secondary))',
+					foreground: 'rgb(var(--secondary-foreground))'
 				},
 				destructive: {
-					DEFAULT: 'var(--destructive)',
-					foreground: 'var(--destructive-foreground)'
+					DEFAULT: 'rgb(var(--destructive))',
+					foreground: 'rgb(var(--destructive-foreground))'
 				},
 				muted: {
-					DEFAULT: 'var(--muted)',
-					foreground: 'var(--muted-foreground)'
+					DEFAULT: 'rgb(var(--muted))',
+					foreground: 'rgb(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: 'var(--accent)',
-					foreground: 'var(--accent-foreground)'
+					DEFAULT: 'rgb(var(--accent))',
+					foreground: 'rgb(var(--accent-foreground))'
 				},
 				popover: {
-					DEFAULT: 'var(--popover)',
-					foreground: 'var(--popover-foreground)'
+					DEFAULT: 'rgb(var(--popover))',
+					foreground: 'rgb(var(--popover-foreground))'
 				},
 				card: {
-					DEFAULT: 'var(--card)',
-					foreground: 'var(--card-foreground)'
+					DEFAULT: 'rgb(var(--card))',
+					foreground: 'rgb(var(--card-foreground))'
 				},
 				university: {
-					gold: 'var(--university-gold)',
-					blue: 'var(--university-blue)'
+					gold: 'rgb(var(--university-gold))',
+					blue: 'rgb(var(--university-blue))'
 				}
 			},
 			fontFamily: {
