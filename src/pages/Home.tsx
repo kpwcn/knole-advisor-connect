@@ -162,10 +162,10 @@ const Home = () => {
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center university-card">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-university-blue/10 rounded-full mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-4">
                 <Users size={32} className="text-primary" />
               </div>
-              <div className="text-3xl font-bold text-primary mb-2" id="members-stat">
+              <div className="text-3xl font-bold text-university-blue mb-2" id="members-stat">
                 {stats.members}+
               </div>
               {/* CMS-edit-start::members-label */}
