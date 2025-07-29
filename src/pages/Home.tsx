@@ -57,6 +57,7 @@ const Home = () => {
           playsInline
           aria-hidden="true"
         >
+          <source src="/public/videos/london.mp4" type="video/mp4" />
           <source src="/videos/london.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           <div className="absolute inset-0 bg-gradient-university" />
