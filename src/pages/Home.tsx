@@ -19,6 +19,8 @@ interface Sponsor {
 const Home = () => {
   const [stats, setStats] = useState<Stats>({ members: 0, eventsPerYear: 0, sponsors: 0 });
   const [sponsors, setSponsors] = useState<Sponsor[]>([]);
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [videoError, setVideoError] = useState(false);
 
   useEffect(() => {
     // Simulate fetching data from JSON files
@@ -42,39 +44,96 @@ const Home = () => {
     };
 
     fetchData();
+
+    // Test if video file exists
+    const testVideoFile = async () => {
+      try {
+        const response = await fetch('/videos/london2.mp4');
+        console.log('Video file test:', response.status, response.ok);
+        if (!response.ok) {
+          console.error('Video file not found or inaccessible');
+          setVideoError(true);
+        }
+      } catch (error) {
+        console.error('Error testing video file:', error);
+        setVideoError(true);
+      }
+    };
+
+    testVideoFile();
   }, []);
+
+  const handleVideoLoad = () => {
+    console.log('✅ Video loaded successfully');
+    setVideoLoaded(true);
+    setVideoError(false);
+  };
+
+  const handleVideoError = (e: any) => {
+    console.error('❌ Video failed to load:', e);
+    console.error('Video error details:', {
+      error: e.target?.error,
+      networkState: e.target?.networkState,
+      readyState: e.target?.readyState,
+      currentSrc: e.target?.currentSrc
+    });
+    setVideoError(true);
+    setVideoLoaded(false);
+  };
+
+  const handleVideoCanPlay = () => {
+    console.log('🎬 Video can start playing');
+  };
 
   return (
     <Layout title="Knole Advisory - Student Finance & Consulting Society">
       {/* Hero Section */}
       <section className="relative text-primary-foreground py-20 lg:py-28 overflow-hidden">
-        {/* Background Video */}
-        <video
-          className="absolute inset-0 w-full h-full object-cover z-0"
-          autoPlay
-          muted
-          loop
-          playsInline
-          aria-hidden="true"
-        >
-          <source src="/videos/london2.mp4" type="video/mp4" />
-          {/* Fallback for browsers that don't support video */}
-          <div className="absolute inset-0 bg-primary/10 z-10" />
-        </video>
         
-        {/* Green Overlay */}
-        <div className="absolute inset-0 bg-primary/10 z-10" />
+        {/* Background - Video or Fallback */}
+        {!videoError ? (
+          <video
+            className="absolute inset-0 w-full h-full object-cover z-0"
+            autoPlay
+            muted
+            loop
+            playsInline
+            aria-hidden="true"
+            onLoadedData={handleVideoLoad}
+            onError={handleVideoError}
+            onCanPlay={handleVideoCanPlay}
+            preload="auto"
+          >
+            {/* FIXED: Remove spaces and /public/ prefix */}
+            <source src="/videos/london2.mp4" type="video/mp4" />
+            {/* Alternative with URL encoding for spaces if you can't rename */}
+            <source src="/public/videos/london2.mp4" type="video/mp4" />
+          </video>
+        ) : (
+          /* Fallback gradient background */
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-dark to-secondary z-0" />
+        )}
+        
+        {/* Overlay - Adjust opacity based on video status */}
+        <div className={`absolute inset-0 z-10 ${videoLoaded ? 'bg-primary/20' : 'bg-primary/40'}`} />
+        
+        {/* Debug info - Remove in production */}
+        {process.env.NODE_ENV === 'development' && (
+          <div className="absolute top-4 left-4 z-30 bg-black/80 text-white p-2 rounded text-xs">
+            Video Status: {videoError ? '❌ Error' : videoLoaded ? '✅ Loaded' : '⏳ Loading'}
+          </div>
+        )}
         
         <div className="relative z-20 max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             {/* CMS-edit-start::hero-title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-white drop-shadow-lg">
               Knole Advisory – Student Finance & Consulting Society
             </h1>
             {/* CMS-edit-end */}
             
             {/* CMS-edit-start::hero-subtitle */}
-            <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed drop-shadow-md">
               Empowering the next generation of finance and consulting professionals through 
               education, networking, and real-world experience.
             </p>
@@ -85,7 +144,7 @@ const Home = () => {
                 <Button 
                   id="join-cta"
                   size="lg"
-                  className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8 py-3 text-lg font-semibold"
+                  className="bg-white text-primary hover:bg-white/90 px-8 py-3 text-lg font-semibold shadow-lg"
                 >
                   Join Our Society
                 </Button>
@@ -94,7 +153,7 @@ const Home = () => {
                 <Button 
                   variant="outline"
                   size="lg"
-                  className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-3 text-lg font-semibold"
+                  className="border-white text-white hover:bg-white hover:text-primary px-8 py-3 text-lg font-semibold shadow-lg"
                 >
                   View Events
                 </Button>
