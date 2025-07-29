@@ -57,8 +57,7 @@ const Home = () => {
           playsInline
           aria-hidden="true"
         >
-          <source src="/videos/london 2.mp4" type="video/mp4" />
-          <source src="/public/videos/london 2.mp4" type="video/mp4" />
+          <source src="/videos/london2.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           <div className="absolute inset-0 bg-primary/10 z-10" />
         </video>
