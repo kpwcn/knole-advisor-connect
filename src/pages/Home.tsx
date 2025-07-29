@@ -115,14 +115,8 @@ const Home = () => {
         )}
         
         {/* Overlay - Adjust opacity based on video status */}
-        <div className={`absolute inset-0 z-10 ${videoLoaded ? 'bg-primary/20' : 'bg-primary/40'}`} />
-        
-        {/* Debug info - Remove in production */}
-        {process.env.NODE_ENV === 'development' && (
-          <div className="absolute top-4 left-4 z-30 bg-black/80 text-white p-2 rounded text-xs">
-            Video Status: {videoError ? '❌ Error' : videoLoaded ? '✅ Loaded' : '⏳ Loading'}
-          </div>
-        )}
+        <div className={`absolute inset-0 z-10 ${videoLoaded ? 'bg-primary/40' : 'bg-primary/80'}`} />
+
         
         <div className="relative z-20 max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
