@@ -161,7 +161,7 @@ const Home = () => {
       <section className="py-16 bg-secondary/50">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center university-card">
+            <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                 <Users size={32} className="text-university-blue" />
               </div>
@@ -173,7 +173,7 @@ const Home = () => {
               {/* CMS-edit-end */}
             </div>
 
-            <div className="text-center university-card">
+            <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                 <Calendar size={32} className="text-university-blue" />
               </div>
@@ -185,7 +185,7 @@ const Home = () => {
               {/* CMS-edit-end */}
             </div>
 
-            <div className="text-center university-card">
+            <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                 <Briefcase size={32} className="text-university-blue" />
               </div>
@@ -215,7 +215,7 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="university-card text-center">
+            <div className="text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mb-4">
                 <TrendingUp size={24} className="text-primary" />
               </div>
@@ -227,7 +227,7 @@ const Home = () => {
               {/* CMS-edit-end */}
             </div>
 
-            <div className="university-card text-center">
+            <div className="text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-university-blue/10 rounded-lg mb-4">
                 <Users size={24} className="text-university-blue" />
               </div>
@@ -239,7 +239,7 @@ const Home = () => {
               {/* CMS-edit-end */}
             </div>
 
-            <div className="university-card text-center">
+            <div className="text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-university-gold/10 rounded-lg mb-4">
                 <Award size={24} className="text-university-gold" />
               </div>
