@@ -7,7 +7,7 @@
 @layer base {
   :root {
     /* Primary Brand Colors - Exact Logo Color rgb(10, 58, 48) */
-    --primary: 168 71 13;  /* Your exact logo color */
+    --primary: 10 58 48;  /* Your exact logo color */
     --primary-foreground: 255 255 255;  /* Solid white */
     --primary-light: 168 71 20;  /* Slightly lighter variation */
     --primary-dark: 168 71 8;   /* Slightly darker variation */
