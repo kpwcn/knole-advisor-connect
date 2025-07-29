@@ -2,52 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Knole Advisory Design System - Dark Green Theme */
+/* Knole Advisory Design System - Logo Color Theme */
 
 @layer base {
   :root {
-    /* Primary Brand Colors - Knole Advisory Green */
-    --primary: 26 76 58;  /* Extracted from new logo */
-    --primary-foreground: 255 255 255;
-    --primary-light: 42 107 74;
-    --primary-dark: 15 58 42;
+    /* Primary Brand Colors - Exact Logo Color rgb(10, 58, 48) */
+    --primary: 168 71 13;  /* Your exact logo color */
+    --primary-foreground: 255 255 255;  /* Solid white */
+    --primary-light: 168 71 20;  /* Slightly lighter variation */
+    --primary-dark: 168 71 8;   /* Slightly darker variation */
     
-    /* Secondary & Accent Colors */
-    --secondary: 23 66 57;
-    --secondary-foreground: 255 255 255;
-    --accent: 31 76 63;
-    --accent-foreground: 255 255 255;
+    /* Secondary & Accent Colors - Variations of logo color */
+    --secondary: 168 71 13;  /* Same as primary for consistency */
+    --secondary-foreground: 255 255 255;  /* Solid white */
+    --accent: 168 71 16;  /* Very subtle variation */
+    --accent-foreground: 255 255 255;  /* Solid white */
     
-    /* Neutral Palette - Knole Advisory Theme */
-    --background: 15 53 42;  /* Deep Knole green background */
-    --foreground: 255 255 255;    /* White text */
-    --muted: 26 66 53;
-    --muted-foreground: 217 217 217;
+    /* Neutral Palette - Logo Color Theme */
+    --background: 168 71 13;  /* Your logo color as background */
+    --foreground: 255 255 255;  /* Solid white text */
+    --muted: 168 71 18;  /* Slightly lighter for muted elements */
+    --muted-foreground: 255 255 255;  /* Solid white */
     
-    /* University Theme Colors */
+    /* University Theme Colors - Keep existing if needed */
     --university-gold: 230 197 71;
     --university-blue: 74 111 165;
     
-    /* UI Elements */
-    --card: 21 61 51;
-    --card-foreground: 255 255 255;
-    --popover: 21 61 51;
-    --popover-foreground: 255 255 255;
-    --border: 45 90 74;
-    --input: 31 76 63;
-    --ring: 26 76 58;
-    --destructive: 220 38 38;
-    --destructive-foreground: 255 255 255;
+    /* UI Elements - All using logo color base */
+    --card: 168 71 16;  /* Slightly lighter for cards */
+    --card-foreground: 255 255 255;  /* Solid white */
+    --popover: 168 71 16;
+    --popover-foreground: 255 255 255;  /* Solid white */
+    --border: 168 71 25;  /* Lighter border */
+    --input: 168 71 20;  /* Slightly lighter for inputs */
+    --ring: 168 71 13;  /* Focus ring using logo color */
+    --destructive: 0 84 60;  /* Red for errors */
+    --destructive-foreground: 255 255 255;  /* Solid white */
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, rgb(var(--primary)), rgb(var(--primary-light)));
-    --gradient-accent: linear-gradient(135deg, rgb(var(--accent)), rgb(var(--secondary)));
-    --gradient-university: linear-gradient(135deg, rgb(var(--primary)), rgb(var(--university-blue)));
+    /* Gradients - All based on logo color */
+    --gradient-primary: linear-gradient(135deg, rgb(10, 58, 48), rgb(15, 70, 58));
+    --gradient-accent: linear-gradient(135deg, rgb(10, 58, 48), rgb(12, 62, 50));
+    --gradient-university: linear-gradient(135deg, rgb(10, 58, 48), rgb(74, 111, 165));
     
-    /* Shadows */
-    --shadow-subtle: 0 1px 3px rgb(var(--primary) / 0.1);
-    --shadow-medium: 0 4px 6px rgb(var(--primary) / 0.1);
-    --shadow-strong: 0 10px 25px rgb(var(--primary) / 0.15);
+    /* Shadows - Using logo color */
+    --shadow-subtle: 0 1px 3px rgba(10, 58, 48, 0.1);
+    --shadow-medium: 0 4px 6px rgba(10, 58, 48, 0.1);
+    --shadow-strong: 0 10px 25px rgba(10, 58, 48, 0.15);
     
     /* Typography - Helvetica Family */
     --font-heading: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -61,52 +61,46 @@
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar - All using logo color theme */
+    --sidebar-background: 168 71 13;
+    --sidebar-foreground: 255 255 255;
+    --sidebar-primary: 168 71 13;
+    --sidebar-primary-foreground: 255 255 255;
+    --sidebar-accent: 168 71 18;
+    --sidebar-accent-foreground: 255 255 255;
+    --sidebar-border: 168 71 25;
+    --sidebar-ring: 168 71 13;
   }
 
   .dark {
-    /* Dark mode maintains the same Knole green theme */
-    --background: 10 46 36;   /* Even darker Knole green for dark mode */
-    --foreground: 255 255 255;
-    --card: 15 53 42;
-    --card-foreground: 255 255 255;
-    --popover: 15 53 42;
-    --popover-foreground: 255 255 255;
-    --primary: 26 76 58;
-    --primary-foreground: 255 255 255;
-    --secondary: 18 58 47;
-    --secondary-foreground: 255 255 255;
-    --muted: 23 66 57;
-    --muted-foreground: 204 204 204;
-    --accent: 26 66 53;
-    --accent-foreground: 255 255 255;
-    --destructive: 185 28 28;
-    --destructive-foreground: 255 255 255;
-    --border: 36 82 69;
-    --input: 26 66 53;
-    --ring: 26 76 58;
-    --sidebar-background: 10 46 36;
+    /* Dark mode - Even darker version of logo color */
+    --background: 168 71 8;   /* Darker version of logo color */
+    --foreground: 255 255 255;  /* Solid white */
+    --card: 168 71 13;  /* Your logo color */
+    --card-foreground: 255 255 255;  /* Solid white */
+    --popover: 168 71 13;
+    --popover-foreground: 255 255 255;  /* Solid white */
+    --primary: 168 71 13;  /* Your logo color */
+    --primary-foreground: 255 255 255;  /* Solid white */
+    --secondary: 168 71 13;
+    --secondary-foreground: 255 255 255;  /* Solid white */
+    --muted: 168 71 16;
+    --muted-foreground: 255 255 255;  /* Solid white */
+    --accent: 168 71 16;
+    --accent-foreground: 255 255 255;  /* Solid white */
+    --destructive: 0 84 60;
+    --destructive-foreground: 255 255 255;  /* Solid white */
+    --border: 168 71 25;
+    --input: 168 71 18;
+    --ring: 168 71 13;
+    --sidebar-background: 168 71 8;
     --sidebar-foreground: 255 255 255;
-    --sidebar-primary: 26 76 58;
+    --sidebar-primary: 168 71 13;
     --sidebar-primary-foreground: 255 255 255;
-    --sidebar-accent: 23 66 57;
+    --sidebar-accent: 168 71 16;
     --sidebar-accent-foreground: 255 255 255;
-    --sidebar-border: 31 74 64;
-    --sidebar-ring: 26 76 58;
+    --sidebar-border: 168 71 20;
+    --sidebar-ring: 168 71 13;
   }
 }
 
@@ -118,12 +112,24 @@
   body {
     @apply bg-background text-foreground font-body;
     font-family: var(--font-body);
+    color: white; /* Force solid white text */
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 600;
     line-height: 1.2;
+    color: white; /* Force solid white for headings */
+  }
+  
+  /* Ensure all text elements are solid white */
+  p, span, div, a, li, td, th, label {
+    color: white;
+  }
+  
+  /* Logo and important text - force solid white */
+  .logo, .brand, .nav-item, .menu-item {
+    color: white !important;
   }
   
   .text-gradient-primary {
@@ -156,14 +162,17 @@
   /* University society specific styles */
   .university-card {
     @apply bg-card rounded-lg border border-border p-6 transition-smooth hover:shadow-elegant;
+    color: white; /* Ensure card text is white */
   }
   
   .university-btn-primary {
     @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-smooth hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+    color: white !important; /* Force white text on buttons */
   }
   
   .university-btn-secondary {
     @apply bg-secondary text-secondary-foreground border border-border px-6 py-3 rounded-lg font-semibold transition-smooth hover:bg-accent focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+    color: white !important; /* Force white text on buttons */
   }
   
   /* Accessibility improvements */
