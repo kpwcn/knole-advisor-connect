@@ -7,37 +7,37 @@
 @layer base {
   :root {
     /* Primary Brand Colors - Exact Logo Color RGB(10, 58, 48) */
-    --primary: 167 71 13;  /* RGB(10, 58, 48) as HSL: 167° 71% 13% */
-    --primary-foreground: 0 0 100;  /* Pure white in HSL */
-    --primary-light: 167 65 20;  /* Slightly lighter version */
-    --primary-dark: 167 80 8;   /* Slightly darker version */
+    --primary: 10 58 48;  /* RGB(10, 58, 48) - space separated */
+    --primary-foreground: 255 255 255;  /* Pure white RGB */
+    --primary-light: 20 68 58;  /* Slightly lighter version */
+    --primary-dark: 5 48 38;   /* Slightly darker version */
     
     /* Secondary & Accent Colors - Based on logo color */
-    --secondary: 167 65 16;
-    --secondary-foreground: 0 0 100;  /* Pure white in HSL */
-    --accent: 167 68 18;
-    --accent-foreground: 0 0 100;  /* Pure white in HSL */
+    --secondary: 15 53 43;
+    --secondary-foreground: 255 255 255;  /* Pure white RGB */
+    --accent: 12 55 45;
+    --accent-foreground: 255 255 255;  /* Pure white RGB */
     
     /* Neutral Palette - Logo Color Theme */
-    --background: 167 71 13;  /* Same as logo color */
-    --foreground: 0 0 100;  /* Pure white text */
-    --muted: 167 65 16;
-    --muted-foreground: 0 0 100;  /* Pure white */
+    --background: 10 58 48;  /* Same as logo color */
+    --foreground: 255 255 255;  /* Pure white text */
+    --muted: 15 53 43;
+    --muted-foreground: 255 255 255;  /* Pure white */
     
     /* University Theme Colors */
     --university-gold: 230 197 71;
     --university-blue: 74 111 165;
     
     /* UI Elements */
-    --card: 167 75 10;  /* Darker version of logo color */
-    --card-foreground: 255 255 255;  /* Solid white */
-    --popover: 167 75 10;
-    --popover-foreground: 255 255 255;  /* Solid white */
-    --border: 167 60 25;  /* Lighter border */
-    --input: 167 68 18;
-    --ring: 167 71 13;  /* Same as logo color */
+    --card: 8 48 38;  /* Darker version of logo color */
+    --card-foreground: 255 255 255;  /* Pure white RGB */
+    --popover: 8 48 38;
+    --popover-foreground: 255 255 255;  /* Pure white RGB */
+    --border: 25 73 63;  /* Lighter border */
+    --input: 12 55 45;
+    --ring: 10 58 48;  /* Same as logo color */
     --destructive: 220 38 38;
-    --destructive-foreground: 255 255 255;  /* Solid white */
+    --destructive-foreground: 255 255 255;  /* Pure white RGB */
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, rgb(var(--primary)), rgb(var(--primary-light)));
@@ -61,45 +61,45 @@
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
-    --sidebar-background: 167 71 13;  /* Same as logo color */
-    --sidebar-foreground: 255 255 255;  /* Solid white */
-    --sidebar-primary: 167 71 13;  /* Same as logo color */
-    --sidebar-primary-foreground: 255 255 255;  /* Solid white */
-    --sidebar-accent: 167 65 16;
-    --sidebar-accent-foreground: 255 255 255;  /* Solid white */
-    --sidebar-border: 167 60 25;
-    --sidebar-ring: 167 71 13;  /* Same as logo color */
+    --sidebar-background: 10 58 48;  /* Same as logo color */
+    --sidebar-foreground: 255 255 255;  /* Pure white RGB */
+    --sidebar-primary: 10 58 48;  /* Same as logo color */
+    --sidebar-primary-foreground: 255 255 255;  /* Pure white RGB */
+    --sidebar-accent: 15 53 43;
+    --sidebar-accent-foreground: 255 255 255;  /* Pure white RGB */
+    --sidebar-border: 25 73 63;
+    --sidebar-ring: 10 58 48;  /* Same as logo color */
   }
 
   .dark {
     /* Dark mode maintains the same logo color theme */
-    --background: 167 80 8;   /* Darker version of logo color */
-    --foreground: 255 255 255;  /* Solid white */
-    --card: 167 75 10;
-    --card-foreground: 255 255 255;  /* Solid white */
-    --popover: 167 75 10;
-    --popover-foreground: 255 255 255;  /* Solid white */
-    --primary: 167 71 13;  /* Same logo color */
-    --primary-foreground: 255 255 255;  /* Solid white */
-    --secondary: 167 65 16;
-    --secondary-foreground: 255 255 255;  /* Solid white */
-    --muted: 167 68 18;
-    --muted-foreground: 255 255 255;  /* Solid white */
-    --accent: 167 65 16;
-    --accent-foreground: 255 255 255;  /* Solid white */
+    --background: 5 43 33;   /* Darker version of logo color */
+    --foreground: 255 255 255;  /* Pure white RGB */
+    --card: 8 48 38;
+    --card-foreground: 255 255 255;  /* Pure white RGB */
+    --popover: 8 48 38;
+    --popover-foreground: 255 255 255;  /* Pure white RGB */
+    --primary: 10 58 48;  /* Same logo color */
+    --primary-foreground: 255 255 255;  /* Pure white RGB */
+    --secondary: 15 53 43;
+    --secondary-foreground: 255 255 255;  /* Pure white RGB */
+    --muted: 12 55 45;
+    --muted-foreground: 255 255 255;  /* Pure white RGB */
+    --accent: 15 53 43;
+    --accent-foreground: 255 255 255;  /* Pure white RGB */
     --destructive: 185 28 28;
-    --destructive-foreground: 255 255 255;  /* Solid white */
-    --border: 167 60 25;
-    --input: 167 65 16;
-    --ring: 167 71 13;  /* Same logo color */
-    --sidebar-background: 167 80 8;
-    --sidebar-foreground: 255 255 255;  /* Solid white */
-    --sidebar-primary: 167 71 13;  /* Same logo color */
-    --sidebar-primary-foreground: 255 255 255;  /* Solid white */
-    --sidebar-accent: 167 65 16;
-    --sidebar-accent-foreground: 255 255 255;  /* Solid white */
-    --sidebar-border: 167 60 25;
-    --sidebar-ring: 167 71 13;  /* Same logo color */
+    --destructive-foreground: 255 255 255;  /* Pure white RGB */
+    --border: 25 73 63;
+    --input: 15 53 43;
+    --ring: 10 58 48;  /* Same logo color */
+    --sidebar-background: 5 43 33;
+    --sidebar-foreground: 255 255 255;  /* Pure white RGB */
+    --sidebar-primary: 10 58 48;  /* Same logo color */
+    --sidebar-primary-foreground: 255 255 255;  /* Pure white RGB */
+    --sidebar-accent: 15 53 43;
+    --sidebar-accent-foreground: 255 255 255;  /* Pure white RGB */
+    --sidebar-border: 25 73 63;
+    --sidebar-ring: 10 58 48;  /* Same logo color */
   }
 }
 
