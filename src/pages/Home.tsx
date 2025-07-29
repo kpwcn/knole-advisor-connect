@@ -16,6 +16,27 @@ interface Sponsor {
   tier: 'gold' | 'silver';
 }
 
+const DynamicText = () => {
+  const texts = ['Innovation', 'Excellence', 'Leadership', 'Growth', 'Success', 'Future'];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [texts.length]);
+
+  return (
+    <div className="text-center py-12">
+      <div className="text-6xl md:text-7xl lg:text-8xl font-heading font-bold text-primary transition-all duration-500 animate-fade-in">
+        {texts[currentIndex]}
+      </div>
+    </div>
+  );
+};
+
 const Home = () => {
   const [stats, setStats] = useState<Stats>({ members: 0, eventsPerYear: 0, sponsors: 0 });
   const [sponsors, setSponsors] = useState<Sponsor[]>([]);
@@ -214,43 +235,7 @@ const Home = () => {
             {/* CMS-edit-end */}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mb-4">
-                <TrendingUp size={24} className="text-primary" />
-              </div>
-              {/* CMS-edit-start::skill-development */}
-              <h3 className="text-xl font-semibold mb-3">Skill Development</h3>
-              <p className="text-muted-foreground">
-                Expert-led workshops on financial modeling, case studies, and consulting frameworks
-              </p>
-              {/* CMS-edit-end */}
-            </div>
-
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-university-blue/10 rounded-lg mb-4">
-                <Users size={24} className="text-university-blue" />
-              </div>
-              {/* CMS-edit-start::networking */}
-              <h3 className="text-xl font-semibold mb-3">Networking</h3>
-              <p className="text-muted-foreground">
-                Connect with industry professionals, alumni, and like-minded peers
-              </p>
-              {/* CMS-edit-end */}
-            </div>
-
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-university-gold/10 rounded-lg mb-4">
-                <Award size={24} className="text-university-gold" />
-              </div>
-              {/* CMS-edit-start::mentorship */}
-              <h3 className="text-xl font-semibold mb-3">Mentorship</h3>
-              <p className="text-muted-foreground">
-                One-on-one guidance from experienced professionals in your field of interest
-              </p>
-              {/* CMS-edit-end */}
-            </div>
-          </div>
+          <DynamicText />
         </div>
       </section>
 
