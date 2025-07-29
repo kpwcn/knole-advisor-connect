@@ -47,8 +47,25 @@ const Home = () => {
   return (
     <Layout title="Knole Advisory - Student Finance & Consulting Society">
       {/* Hero Section */}
-      <section className="bg-gradient-university text-primary-foreground py-20 lg:py-28">
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative text-primary-foreground py-20 lg:py-28 overflow-hidden">
+        {/* Background Video */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-hidden="true"
+        >
+          <source src="/path-to-your-video.mp4" type="video/mp4" />
+          {/* Fallback for browsers that don't support video */}
+          <div className="absolute inset-0 bg-gradient-university" />
+        </video>
+        
+        {/* Green Overlay */}
+        <div className="absolute inset-0 bg-primary/30 z-10" />
+        
+        <div className="relative z-20 max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             {/* CMS-edit-start::hero-title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
