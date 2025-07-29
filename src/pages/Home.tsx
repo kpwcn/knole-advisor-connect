@@ -109,7 +109,8 @@ const Home = () => {
   return (
     <Layout title="Knole Advisory - Student Finance & Consulting Society">
       {/* Hero Section */}
-      <section className="relative text-primary-foreground py-20 lg:py-28 overflow-hidden">
+      <section className="relative text-primary-foreground min-h-screen flex items-center overflow-hidden">
+        
         
         {/* Background - Video or Fallback */}
         {!videoError ? (
