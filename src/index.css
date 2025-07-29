@@ -7,37 +7,37 @@
 @layer base {
   :root {
     /* Primary Brand Colors - Knole Advisory Green */
-    --primary: 158 56% 20%;  /* Extracted from new logo */
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 158 46% 30%;
-    --primary-dark: 158 66% 15%;
+    --primary: #1a4c3a;  /* Extracted from new logo */
+    --primary-foreground: #ffffff;
+    --primary-light: #2a6b4a;
+    --primary-dark: #0f3a2a;
     
     /* Secondary & Accent Colors */
-    --secondary: 158 50% 18%;
-    --secondary-foreground: 0 0% 100%;
-    --accent: 158 45% 22%;
-    --accent-foreground: 0 0% 100%;
+    --secondary: #174239;
+    --secondary-foreground: #ffffff;
+    --accent: #1f4c3f;
+    --accent-foreground: #ffffff;
     
     /* Neutral Palette - Knole Advisory Theme */
-    --background: 158 60% 12%;  /* Deep Knole green background */
-    --foreground: 0 0% 100%;    /* White text */
-    --muted: 158 45% 18%;
-    --muted-foreground: 0 0% 85%;
+    --background: #0f352a;  /* Deep Knole green background */
+    --foreground: #ffffff;    /* White text */
+    --muted: #1a4235;
+    --muted-foreground: #d9d9d9;
     
     /* University Theme Colors */
-    --university-gold: 45 85% 55%;
-    --university-blue: 220 50% 45%;
+    --university-gold: #e6c547;
+    --university-blue: #4a6fa5;
     
     /* UI Elements */
-    --card: 158 50% 16%;
-    --card-foreground: 0 0% 100%;
-    --popover: 158 50% 16%;
-    --popover-foreground: 0 0% 100%;
-    --border: 158 40% 28%;
-    --input: 158 45% 20%;
-    --ring: 158 56% 20%;
-    --destructive: 0 62.8% 50%;
-    --destructive-foreground: 0 0% 100%;
+    --card: #153d33;
+    --card-foreground: #ffffff;
+    --popover: #153d33;
+    --popover-foreground: #ffffff;
+    --border: #2d5a4a;
+    --input: #1f4c3f;
+    --ring: #1a4c3a;
+    --destructive: #dc2626;
+    --destructive-foreground: #ffffff;
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
@@ -80,33 +80,33 @@
 
   .dark {
     /* Dark mode maintains the same Knole green theme */
-    --background: 158 60% 8%;   /* Even darker Knole green for dark mode */
-    --foreground: 0 0% 100%;
-    --card: 158 50% 12%;
-    --card-foreground: 0 0% 100%;
-    --popover: 158 50% 12%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 158 56% 20%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 158 50% 14%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 158 45% 16%;
-    --muted-foreground: 0 0% 80%;
-    --accent: 158 45% 18%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 158 40% 22%;
-    --input: 158 45% 18%;
-    --ring: 158 56% 20%;
-    --sidebar-background: 158 60% 8%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 158 56% 20%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 158 45% 16%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 158 40% 20%;
-    --sidebar-ring: 158 56% 20%;
+    --background: #0a2e24;   /* Even darker Knole green for dark mode */
+    --foreground: #ffffff;
+    --card: #0f352a;
+    --card-foreground: #ffffff;
+    --popover: #0f352a;
+    --popover-foreground: #ffffff;
+    --primary: #1a4c3a;
+    --primary-foreground: #ffffff;
+    --secondary: #123a2f;
+    --secondary-foreground: #ffffff;
+    --muted: #174239;
+    --muted-foreground: #cccccc;
+    --accent: #1a4235;
+    --accent-foreground: #ffffff;
+    --destructive: #b91c1c;
+    --destructive-foreground: #ffffff;
+    --border: #245245;
+    --input: #1a4235;
+    --ring: #1a4c3a;
+    --sidebar-background: #0a2e24;
+    --sidebar-foreground: #ffffff;
+    --sidebar-primary: #1a4c3a;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #174239;
+    --sidebar-accent-foreground: #ffffff;
+    --sidebar-border: #1f4a40;
+    --sidebar-ring: #1a4c3a;
   }
 }
 
