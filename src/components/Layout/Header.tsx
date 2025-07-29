@@ -25,9 +25,9 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center focus-visible:focus">
             <img 
-              src="/lovable-uploads/76baaf86-35a7-4e49-aece-2af7a1c25795.png" 
+              src="/lovable-uploads/ab060c40-f5d5-43c5-8320-c6d3fb36981f.png" 
               alt="Knole Advisory Logo" 
-              className="h-8 w-8 rounded-full"
+              className="h-10 w-auto"
             />
           </Link>
 
