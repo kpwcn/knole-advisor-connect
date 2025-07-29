@@ -174,7 +174,7 @@ const Home = () => {
             </div>
 
             <div className="text-center university-card">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-university-blue/10 rounded-full mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                 <Calendar size={32} className="text-university-blue" />
               </div>
               <div className="text-3xl font-bold text-university-blue mb-2" id="events-stat">
@@ -186,10 +186,10 @@ const Home = () => {
             </div>
 
             <div className="text-center university-card">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-university-gold/10 rounded-full mb-4">
-                <Briefcase size={32} className="text-university-gold" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
+                <Briefcase size={32} className="text-university-blue" />
               </div>
-              <div className="text-3xl font-bold text-university-gold mb-2" id="sponsors-stat">
+              <div className="text-3xl font-bold text-university-blue mb-2" id="sponsors-stat">
                 {stats.sponsors}+
               </div>
               {/* CMS-edit-start::sponsors-label */}
