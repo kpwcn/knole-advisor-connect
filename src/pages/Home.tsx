@@ -165,7 +165,7 @@ const Home = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                 <Users size={32} className="text-university-blue" />
               </div>
-              <div className="text-3xl font-bold text-university-blue mb-2" id="members-stat">
+              <div className="text-5xl font-bold text-university-blue mb-2" id="members-stat">
                 {stats.members}+
               </div>
               {/* CMS-edit-start::members-label */}
@@ -177,7 +177,7 @@ const Home = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                 <Calendar size={32} className="text-university-blue" />
               </div>
-              <div className="text-3xl font-bold text-university-blue mb-2" id="events-stat">
+              <div className="text-5xl font-bold text-university-blue mb-2" id="events-stat">
                 {stats.eventsPerYear}+
               </div>
               {/* CMS-edit-start::events-label */}
@@ -189,7 +189,7 @@ const Home = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                 <Briefcase size={32} className="text-university-blue" />
               </div>
-              <div className="text-3xl font-bold text-university-blue mb-2" id="sponsors-stat">
+              <div className="text-5xl font-bold text-university-blue mb-2" id="sponsors-stat">
                 {stats.sponsors}+
               </div>
               {/* CMS-edit-start::sponsors-label */}
