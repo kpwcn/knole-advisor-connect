@@ -28,24 +28,26 @@ const About = () => {
             <div>
               {/* CMS-edit-start::mission-statement */}
               <h2 className="text-3xl font-heading font-bold text-foreground mb-6">
-                Our Mission
+                Our Story
               </h2>
               <div className="prose prose-lg text-muted-foreground space-y-4">
                 <p>
-                  Founded in 2018, Knole Advisory has emerged as University College London's 
-                  premier student society for finance and consulting enthusiasts. Our mission 
-                  is to bridge the gap between academic learning and professional practice.
+                  Knole Advisory is a UCL born student-driven M&A hub, dedicated to giving students 
+                  a genuine seat at the deal table. Through a highly selective process, we assemble 
+                  cross-disciplinary teams from all backgrounds to deliver rigorous, statistics-led 
+                  advisory to global firms on real buy-side and sell-side mandates.
                 </p>
                 <p>
                   We believe that every student deserves access to high-quality career guidance, 
                   skill development opportunities, and meaningful connections with industry 
                   professionals. Through our comprehensive programs, we prepare students for 
-                  successful careers in finance, consulting, and related fields.
+                  successful careers in investment banking and finance.
                 </p>
                 <p>
-                  Our society is built on the principles of excellence, inclusivity, and 
-                  collaborative learning. We welcome students from all backgrounds and 
-                  academic disciplines who share our passion for business and finance.
+                  Every consultant earns a place through an exacting selection process that 
+                  values curiosity, precision, and relentless drive, then receives senior-banker 
+                  mentorship to ensure clients gain insights that stand up in the boardroom.
+                  We welcome students from all academic disciplines who share our passion.
                 </p>
               </div>
               {/* CMS-edit-end */}
@@ -55,7 +57,7 @@ const About = () => {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Target size={20} className="text-primary" />
+                    <Target size={20} className="text-university-blue" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Excellence</h3>
