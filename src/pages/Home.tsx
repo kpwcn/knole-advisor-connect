@@ -18,11 +18,17 @@ interface Sponsor {
 
 const DynamicText = () => {
   const texts = ['Innovation', 'Excellence', 'Leadership', 'Growth', 'Success', 'Future'];
+  const fonts = ['font-playfair', 'font-montserrat', 'font-oswald', 'font-raleway', 'font-merriweather', 'font-roboto'];
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+      setIsVisible(false);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+        setIsVisible(true);
+      }, 250);
     }, 3000);
 
     return () => clearInterval(interval);
@@ -30,7 +36,9 @@ const DynamicText = () => {
 
   return (
     <div className="text-center py-12">
-      <div className="text-6xl md:text-7xl lg:text-8xl font-heading font-bold text-primary transition-all duration-500 animate-fade-in">
+      <div className={`text-6xl md:text-7xl lg:text-8xl font-bold text-white transition-all duration-500 ${fonts[currentIndex]} ${
+        isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0 animate-fade-out'
+      }`}>
         {texts[currentIndex]}
       </div>
     </div>
