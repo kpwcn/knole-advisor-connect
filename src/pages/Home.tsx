@@ -157,7 +157,7 @@ const Home = () => {
             {/* CMS-edit-end */}
             
             {/* CMS-edit-start::hero-subtitle */}
-            <p className="text-xl md:text-2xl text-white/90 mb-6 leading-relaxed drop-shadow-md">
+            <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed drop-shadow-md">
               From concept to execution. London's first student-run investment bank, building 
               future dealmakers with real-world M&A experience.
             </p>
