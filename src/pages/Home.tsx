@@ -152,14 +152,14 @@ const Home = () => {
           <div className="text-center max-w-4xl mx-auto">
             {/* CMS-edit-start::hero-title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-white drop-shadow-lg">
-              Knole Advisory – Student Finance & Consulting Society
+              Knole Advisory – Student Investment Banking Society
             </h1>
             {/* CMS-edit-end */}
             
             {/* CMS-edit-start::hero-subtitle */}
             <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed drop-shadow-md">
-              Empowering the next generation of finance and consulting professionals through 
-              education, networking, and real-world experience.
+              From concept to execution. London's first student-run investment bank, building 
+              future dealmakers with real-world M&A experience.
             </p>
             {/* CMS-edit-end */}
 
@@ -170,7 +170,7 @@ const Home = () => {
                   size="lg"
                   className="bg-white text-primary hover:bg-white/90 px-8 py-3 text-lg font-semibold shadow-lg"
                 >
-                  Join Our Society
+                  Apply Today
                 </Button>
               </Link>
             </div>
@@ -190,7 +190,7 @@ const Home = () => {
                 {stats.members}+
               </div>
               {/* CMS-edit-start::members-label */}
-              <p className="text-muted-foreground font-medium">Active Members</p>
+              <p className="text-muted-foreground font-medium">Sectors Covered</p>
               {/* CMS-edit-end */}
             </div>
 
@@ -202,7 +202,7 @@ const Home = () => {
                 {stats.eventsPerYear}+
               </div>
               {/* CMS-edit-start::events-label */}
-              <p className="text-muted-foreground font-medium">Events Per Year</p>
+              <p className="text-muted-foreground font-medium">Partner Universities</p>
               {/* CMS-edit-end */}
             </div>
 
@@ -227,10 +227,10 @@ const Home = () => {
           <div className="text-center mb-12">
             {/* CMS-edit-start::offerings-title */}
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-              What We Offer
+              Sectors We Cover
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive support for your finance and consulting career journey
+              Execute real-world transactions across specialized deal groups.
             </p>
             {/* CMS-edit-end */}
           </div>
@@ -245,10 +245,10 @@ const Home = () => {
           <div className="text-center mb-12">
             {/* CMS-edit-start::sponsors-title */}
             <h2 className="text-3xl font-heading font-bold text-foreground mb-4">
-              Our Partners
+              Where Our Analysts End Up
             </h2>
             <p className="text-lg text-muted-foreground">
-              Trusted by leading firms in finance and consulting
+              Leading firms in finance and consulting
             </p>
             {/* CMS-edit-end */}
           </div>
@@ -271,7 +271,7 @@ const Home = () => {
           <div className="text-center mt-8">
             <Link to="/contact">
               <Button variant="outline" className="px-6">
-                View All Partners
+                Learn More
               </Button>
             </Link>
           </div>
@@ -296,7 +296,7 @@ const Home = () => {
                 size="lg"
                 className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8 py-3"
               >
-                Get in Touch
+                Join Today
               </Button>
             </Link>
           </div>
