@@ -155,23 +155,14 @@ const Home = () => {
             </p>
             {/* CMS-edit-end */}
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/membership">
+            <div className="flex justify-center">
+              <Link to="/contact">
                 <Button 
                   id="join-cta"
                   size="lg"
                   className="bg-white text-primary hover:bg-white/90 px-8 py-3 text-lg font-semibold shadow-lg"
                 >
                   Join Our Society
-                </Button>
-              </Link>
-              <Link to="/events">
-                <Button 
-                  variant="outline"
-                  size="lg"
-                  className="border-white text-white hover:bg-white hover:text-primary px-8 py-3 text-lg font-semibold shadow-lg"
-                >
-                  View Events
                 </Button>
               </Link>
             </div>
@@ -270,7 +261,7 @@ const Home = () => {
           </div>
 
           <div className="text-center mt-8">
-            <Link to="/partners">
+            <Link to="/contact">
               <Button variant="outline" className="px-6">
                 View All Partners
               </Button>
@@ -291,20 +282,11 @@ const Home = () => {
           </p>
           {/* CMS-edit-end */}
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/membership">
+          <div className="flex justify-center">
+            <Link to="/contact">
               <Button 
                 size="lg"
                 className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8 py-3"
-              >
-                Become a Member
-              </Button>
-            </Link>
-            <Link to="/contact">
-              <Button 
-                variant="outline"
-                size="lg"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-3"
               >
                 Get in Touch
               </Button>

@@ -9,10 +9,7 @@ const Header = () => {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Committee', href: '/team' },
-    { name: 'Events', href: '/events' },
-    { name: 'Membership', href: '/membership' },
-    { name: 'Partners', href: '/partners' },
+    { name: 'Team', href: '/team' },
     { name: 'Contact', href: '/contact' }
   ];
 
@@ -47,13 +44,6 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Link
-              to="/membership"
-              className="university-btn-primary ml-4"
-              id="header-join-cta"
-            >
-              Join Now
-            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -86,16 +76,7 @@ const Header = () => {
                 >
                   {item.name}
                 </Link>
-              ))}
-              <div className="pt-4 pb-2">
-                <Link
-                  to="/membership"
-                  className="university-btn-primary w-full text-center block"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Join Now
-                </Link>
-              </div>
+                ))}
             </div>
           </div>
         )}
