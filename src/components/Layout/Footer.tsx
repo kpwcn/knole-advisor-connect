@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="public/knole-advisory-logo.png" 
+                src="/lovable-uploads/ab060c40-f5d5-43c5-8320-c6d3fb36981f.png" 
                 alt="Knole Advisory Logo" 
                 className="h-10 w-10 rounded-full"
               />
