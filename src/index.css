@@ -151,17 +151,17 @@
   
   /* University society specific styles */
   .university-card {
-    @apply bg-card rounded-lg border border-border p-6 transition-smooth hover:shadow-elegant;
+    @apply bg-card rounded-lg border border-border p-6 transition-all duration-200 hover:scale-105;
     color: rgb(255, 255, 255);  /* Force solid white text */
   }
   
   .university-btn-primary {
-    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-smooth hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
     color: rgb(255, 255, 255);  /* Force solid white text */
   }
   
   .university-btn-secondary {
-    @apply bg-secondary text-secondary-foreground border border-border px-6 py-3 rounded-lg font-semibold transition-smooth hover:bg-accent focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+    @apply bg-secondary text-secondary-foreground border border-border px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
     color: rgb(255, 255, 255);  /* Force solid white text */
   }
   

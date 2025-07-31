@@ -54,7 +54,7 @@ const Footer = () => {
                     required
                     className="flex-1 bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/60"
                   />
-                  <Button type="submit" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+                  <Button type="submit" className="bg-primary-foreground text-primary transition-all duration-200 hover:scale-105">
                     Subscribe
                   </Button>
                 </form>
@@ -70,12 +70,12 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><Link to="/about" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">About Us</Link></li>
-              <li><Link to="/team" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">Committee</Link></li>
-              <li><Link to="/events" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">Events</Link></li>
-              <li><Link to="/membership" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">Membership</Link></li>
-              <li><Link to="/partners" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">Partners</Link></li>
-              <li><Link to="/contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">Contact</Link></li>
+              <li><Link to="/about" className="text-primary-foreground/80 transition-all duration-200 hover:scale-105">About Us</Link></li>
+              <li><Link to="/team" className="text-primary-foreground/80 transition-all duration-200 hover:scale-105">Committee</Link></li>
+              <li><Link to="/events" className="text-primary-foreground/80 transition-all duration-200 hover:scale-105">Events</Link></li>
+              <li><Link to="/membership" className="text-primary-foreground/80 transition-all duration-200 hover:scale-105">Membership</Link></li>
+              <li><Link to="/partners" className="text-primary-foreground/80 transition-all duration-200 hover:scale-105">Partners</Link></li>
+              <li><Link to="/contact" className="text-primary-foreground/80 transition-all duration-200 hover:scale-105">Contact</Link></li>
             </ul>
           </div>
 
@@ -103,13 +103,13 @@ const Footer = () => {
             <div className="mt-6">
               <h5 className="font-medium mb-3">Follow Us</h5>
               <div className="flex space-x-3">
-                <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-smooth" aria-label="LinkedIn">
+                <a href="#" className="text-primary-foreground/60 transition-all duration-200 hover:scale-105" aria-label="LinkedIn">
                   <Linkedin size={20} />
                 </a>
-                <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-smooth" aria-label="Instagram">
+                <a href="#" className="text-primary-foreground/60 transition-all duration-200 hover:scale-105" aria-label="Instagram">
                   <Instagram size={20} />
                 </a>
-                <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-smooth" aria-label="Twitter">
+                <a href="#" className="text-primary-foreground/60 transition-all duration-200 hover:scale-105" aria-label="Twitter">
                   <Twitter size={20} />
                 </a>
               </div>
@@ -125,10 +125,10 @@ const Footer = () => {
             {/* CMS-edit-end */}
           </div>
           <div className="flex space-x-4 mt-4 sm:mt-0">
-            <Link to="/privacy" className="text-primary-foreground/80 hover:text-primary-foreground text-sm transition-smooth">
+            <Link to="/privacy" className="text-primary-foreground/80 text-sm transition-all duration-200 hover:scale-105">
               Privacy Policy
             </Link>
-            <Link to="/terms" className="text-primary-foreground/80 hover:text-primary-foreground text-sm transition-smooth">
+            <Link to="/terms" className="text-primary-foreground/80 text-sm transition-all duration-200 hover:scale-105">
               Terms of Service
             </Link>
           </div>

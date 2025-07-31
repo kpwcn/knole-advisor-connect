@@ -34,10 +34,10 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-smooth px-3 py-2 rounded-md focus-visible:focus ${
+                className={`text-sm font-medium transition-all duration-200 px-3 py-2 rounded-md focus-visible:focus hover:scale-105 ${
                   isActive(item.href)
                     ? 'text-primary bg-primary/10'
-                    : 'text-foreground hover:text-primary hover:bg-accent/50'
+                    : 'text-foreground'
                 }`}
                 aria-current={isActive(item.href) ? 'page' : undefined}
               >
@@ -48,7 +48,7 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-md text-foreground hover:text-primary hover:bg-accent focus-visible:focus"
+            className="md:hidden p-2 rounded-md text-foreground transition-all duration-200 hover:scale-105 focus-visible:focus"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
@@ -66,10 +66,10 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-smooth focus-visible:focus ${
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 focus-visible:focus hover:scale-105 ${
                     isActive(item.href)
                       ? 'text-primary bg-primary/10'
-                      : 'text-foreground hover:text-primary hover:bg-accent/50'
+                      : 'text-foreground'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                   aria-current={isActive(item.href) ? 'page' : undefined}

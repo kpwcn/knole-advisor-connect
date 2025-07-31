@@ -257,7 +257,7 @@ const Home = () => {
             {sponsors.map((sponsor, index) => (
               <div 
                 key={index}
-                className="flex items-center justify-center p-4 bg-background rounded-lg border border-border hover:shadow-medium transition-smooth"
+                className="flex items-center justify-center p-4 bg-background rounded-lg border border-border transition-all duration-200 hover:scale-105"
               >
                 <div className="w-16 h-16 bg-muted rounded flex items-center justify-center">
                   <span className="text-xs font-medium text-muted-foreground text-center">
