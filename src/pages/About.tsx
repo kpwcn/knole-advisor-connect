@@ -13,8 +13,8 @@ const About = () => {
               About Knole Advisory
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Building the next generation of finance and consulting leaders through education, 
-              mentorship, and professional development.
+              Building the next generation of investment banking leaders through education, 
+              mentorship, and deal exposure.
             </p>
             {/* CMS-edit-end */}
           </div>
@@ -56,7 +56,7 @@ const About = () => {
             <div className="university-card">
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-10 h-10 bg-university-blue/10 rounded-lg flex items-center justify-center">
                     <Target size={20} className="text-university-blue" />
                   </div>
                   <div>
@@ -100,7 +100,7 @@ const About = () => {
             </h2>
             <div className="prose prose-lg text-muted-foreground mx-auto space-y-6">
               <p>
-                Knole Advisory was founded in 2018 by a group of ambitious UCL students who 
+                Knole Advisory was founded in 2024 by a group of ambitious UCL students who 
                 recognized the need for better career preparation and networking opportunities 
                 in the finance and consulting sectors. What started as informal study groups 
                 has grown into one of UCL's most active and respected student societies.
@@ -139,12 +139,12 @@ const About = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* CMS-edit-start::committee-structure */}
                 <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                    <Users size={24} className="text-primary" />
+                  <div className="w-16 h-16 bg-university-blue/10 rounded-full flex items-center justify-center mx-auto">
+                    <Users size={24} className="text-university-blue" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Executive Board</h3>
-                    <p className="text-muted-foreground text-sm">President, VP, Treasurer, Secretary</p>
+                    <p className="text-muted-foreground text-sm">President, Treasurer, COO</p>
                   </div>
                 </div>
 
@@ -153,8 +153,8 @@ const About = () => {
                     <Calendar size={24} className="text-university-blue" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground">Events Team</h3>
-                    <p className="text-muted-foreground text-sm">Workshops, Networking, Social Events</p>
+                    <h3 className="font-semibold text-foreground">Directors</h3>
+                    <p className="text-muted-foreground text-sm">Sector VP/p>
                   </div>
                 </div>
 
@@ -163,15 +163,15 @@ const About = () => {
                     <Target size={24} className="text-university-gold" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground">Outreach Team</h3>
-                    <p className="text-muted-foreground text-sm">Partnerships, Marketing, Alumni Relations</p>
+                    <h3 className="font-semibold text-foreground">Juniors</h3>
+                    <p className="text-muted-foreground text-sm">Analst, Assosiate</p>
                   </div>
                 </div>
                 {/* CMS-edit-end */}
               </div>
             </div>
             <figcaption className="text-center mt-4 text-sm text-muted-foreground">
-              Committee structure diagram showing our organizational hierarchy and responsibilities
+              Our 2025 organizational hierarchy
             </figcaption>
           </figure>
         </div>
