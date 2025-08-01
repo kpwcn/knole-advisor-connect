@@ -91,7 +91,7 @@ const Team = () => {
                   {member.name}
                 </h3>
                 
-                <p className="text-primary font-medium mb-3">
+                <p className="text-foreground font-medium mb-3">
                   {member.position}
                 </p>
                 
@@ -114,7 +114,7 @@ const Team = () => {
                   {member.email && (
                     <a
                       href={`mailto:${member.email}`}
-                      className="inline-flex items-center justify-center w-8 h-8 bg-primary/10 text-primary rounded-full hover:bg-primary hover:text-primary-foreground transition-smooth focus-visible:focus"
+                      className="inline-flex items-center justify-center w-8 h-8 bg-university-blue/10 text-university-blue rounded-full hover:bg-university-blue hover:text-white transition-smooth focus-visible:focus"
                       aria-label={`Email ${member.name}`}
                     >
                       <Mail size={16} />
