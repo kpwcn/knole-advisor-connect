@@ -246,7 +246,7 @@ const Home = () => {
       </section>
 
       {/* What We Offer Section */}
-      <section className="py-16 bg-muted/50">
+      <section className="py-16 bg-background">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             {/* CMS-edit-start::offerings-title */}
@@ -264,7 +264,7 @@ const Home = () => {
       </section>
 
       {/* Sponsors Section */}
-      <section className="py-16 bg-secondary">
+      <section className="py-16 bg-accent text-accent-foreground">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             {/* CMS-edit-start::sponsors-title */}
