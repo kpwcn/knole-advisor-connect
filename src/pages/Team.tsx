@@ -19,7 +19,7 @@ const Team = () => {
       bio: "UCL Mathematics",
       linkedin: "https://www.linkedin.com/in/evan-kok-7465152b8/",
       email: "president@knoleadvisory.org",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b6c31e8b?w=150&h=150&fit=crop&crop=face"
+      image: "/lovable-uploads/evan.JPG"
     },
     {
       name: "Kevin Puzhou Wang",
