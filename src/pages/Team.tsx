@@ -142,14 +142,14 @@ const Team = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="mailto:committee@knoleadvisory.org"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdZ86Rhmu8G6kW-wonOlSxF9g3R0D3ma8d-usNSDq7fyT1DnQ/viewform?usp=header"
               className="university-btn-primary"
             >
               Express Interest
             </a>
             <a 
               href="/contact"
-              className="university-btn-secondary"
+              className="university-btn-primary"
             >
               Learn More
             </a>
