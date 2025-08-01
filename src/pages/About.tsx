@@ -48,7 +48,7 @@ const About = () => {
                   successful careers in investment banking and finance.
                 </p>
                 <p>
-                  Every consultant earns a place through an exacting selection process that 
+                  Every analyst earns a place through an exacting selection process that 
                   values curiosity, precision, and relentless drive, then receives senior-banker 
                   mentorship to ensure clients gain insights that stand up in the boardroom.
                   We welcome students from all academic disciplines who share our passion.
