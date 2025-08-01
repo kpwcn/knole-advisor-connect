@@ -51,7 +51,7 @@ const Team = () => {
   return (
     <Layout title="Committee - Knole Advisory">
       {/* Hero Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-accent">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             {/* CMS-edit-start::team-hero */}
