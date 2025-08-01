@@ -18,7 +18,7 @@ interface Sponsor {
 }
 
 const DynamicText = () => {
-  const texts = ['Industrials', 'Healthcare', 'Leadership', 'Energy & Infrastructure', 'TMT', 'Consumer Retail'];
+  const texts = ['Industrials', 'Healthcare', 'Financial Institutions Group', 'Energy & Infrastructure', 'TMT', 'Consumer Retail'];
   const fonts = ['font-playfair', 'font-montserrat', 'font-oswald', 'font-raleway', 'font-merriweather', 'font-roboto'];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
