@@ -109,7 +109,7 @@ const About = () => {
                   text="Knole Advisory was founded in 2024 by a group of ambitious UCL students who recognized the need for better career preparation and networking opportunities in the finance and consulting sectors. What started as informal study groups has grown into one of UCL's most active and respected student societies."
                   animateOn="view"
                   revealDirection="center"
-                  speed={10}
+                  speed={50}
                   maxIterations={20}
                   className="text-primary"
                   encryptedClassName="text-muted-foreground"
@@ -120,7 +120,7 @@ const About = () => {
                   text="Knole Advisory’s project slate spans Vietnam, Hong Kong, the UK and Malaysia, where we support high-growth companies whose combined valuations exceed US $15 billion and range from advanced-manufacturing to fintech and renewable energy. For students, that geographic and sector diversity translates into truly consequential work: each mandate demands region-specific market research, nuanced cross-border valuation modelling and real dialogue with C-suite executives."
                   animateOn="view"
                   revealDirection="center"
-                  speed={10}
+                  speed={50}
                   maxIterations={20}
                   className="text-primary"
                   encryptedClassName="text-muted-foreground"
@@ -131,7 +131,7 @@ const About = () => {
                   text="The result is hands-on exposure to live, multi-jurisdiction deals experience that sharpens analytical judgement and financial fluency far beyond what a classroom or short internship can deliver."
                   animateOn="view"
                   revealDirection="center"
-                  speed={10}
+                  speed={50}
                   maxIterations={20}
                   className="text-primary"
                   encryptedClassName="text-muted-foreground"
