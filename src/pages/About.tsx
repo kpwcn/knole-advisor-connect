@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout/Layout';
 import { Target, Users, Award, Calendar } from 'lucide-react';
 import ShinyText from '@/components/ui/shiny-text';
+import DecryptedText from '@/components/ui/DecryptedText';
 
 const About = () => {
   return (
@@ -104,10 +105,15 @@ const About = () => {
             </h2>
             <div className="prose prose-lg text-primary mx-auto space-y-6">
               <p>
-                Knole Advisory was founded in 2024 by a group of ambitious UCL students who 
-                recognized the need for better career preparation and networking opportunities 
-                in the finance and consulting sectors. What started as informal study groups 
-                has grown into one of UCL's most active and respected student societies.
+                <DecryptedText
+                  text="Knole Advisory was founded in 2024 by a group of ambitious UCL students who recognized the need for better career preparation and networking opportunities in the finance and consulting sectors. What started as informal study groups has grown into one of UCL's most active and respected student societies."
+                  animateOn="view"
+                  revealDirection="center"
+                  speed={30}
+                  maxIterations={15}
+                  className="text-primary"
+                  encryptedClassName="text-muted-foreground"
+                />
               </p>
               <p>
                 Knole Advisory’s project slate spans Vietnam, Hong Kong, the UK and Malaysia, 
