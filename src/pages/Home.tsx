@@ -64,12 +64,12 @@ const Home = () => {
 
       // Mock sponsors data
       setSponsors([
-        { name: 'Goldman Sachs', logo: '/placeholder-logo.svg', tier: 'gold' },
-        { name: 'JP Morgan', logo: '/placeholder-logo.svg', tier: 'gold' },
-        { name: 'McKinsey & Company', logo: '/placeholder-logo.svg', tier: 'gold' },
-        { name: 'BCG', logo: '/placeholder-logo.svg', tier: 'silver' },
-        { name: 'Bain & Company', logo: '/placeholder-logo.svg', tier: 'silver' },
-        { name: 'Deloitte', logo: '/placeholder-logo.svg', tier: 'silver' }
+        { name: 'Goldman Sachs', logo: '/lovable-uploads/Goldman-Sachs-1869.png', tier: 'gold' },
+        { name: 'JP Morgan', logo: '/lovable-uploads/jpmorgan-vector-logo.png', tier: 'gold' },
+        { name: 'EFG', logo: '/lovable-uploads/EFG_Logo_RGB_pos_medium.png', tier: 'gold' },
+        { name: 'HSBC', logo: '/lovable-uploads/HSBC_logo_(2018).svg.png', tier: 'silver' },
+        { name: 'CIMB', logo: '/lovable-uploads/CIMB-Logo.png', tier: 'silver' },
+        { name: 'KPMG', logo: '/lovable-uploads/Logo_of_KPMG.svg.png', tier: 'silver' }
       ]);
     };
 
