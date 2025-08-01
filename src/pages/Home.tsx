@@ -180,65 +180,65 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-secondary/50">
+      <section className="py-16 bg-primary text-primary-foreground">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-                <Users size={32} className="text-university-blue" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-foreground/10 rounded-full mb-4">
+                <Users size={32} className="text-primary-foreground" />
               </div>
-              <div className="text-5xl font-bold text-university-blue mb-2" id="members-stat">
+              <div className="text-5xl font-bold text-primary-foreground mb-2" id="members-stat">
                 <TextType 
                   text={['6+', '6+', '6+']}
                   typingSpeed={100}
                   pauseDuration={4000}
                   deletingSpeed={50}
                   showCursor={false}
-                  className="text-5xl font-bold text-university-blue"
+                  className="text-5xl font-bold text-primary-foreground"
                 />
               </div>
               {/* CMS-edit-start::members-label */}
-              <p className="text-muted-foreground font-medium">Sectors Covered</p>
+              <p className="text-primary-foreground/80 font-medium">Sectors Covered</p>
               {/* CMS-edit-end */}
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-                <Calendar size={32} className="text-university-blue" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-foreground/10 rounded-full mb-4">
+                <Calendar size={32} className="text-primary-foreground" />
               </div>
-              <div className="text-5xl font-bold text-university-blue mb-2" id="events-stat">
+              <div className="text-5xl font-bold text-primary-foreground mb-2" id="events-stat">
                 <TextType 
                   text={['11', '11', '11']}
                   typingSpeed={100}
                   pauseDuration={4000}
                   deletingSpeed={50}
                   showCursor={false}
-                  className="text-5xl font-bold text-university-blue"
+                  className="text-5xl font-bold text-primary-foreground"
                   initialDelay={500}
                 />
               </div>
               {/* CMS-edit-start::events-label */}
-              <p className="text-muted-foreground font-medium">Partner Universities</p>
+              <p className="text-primary-foreground/80 font-medium">Partner Universities</p>
               {/* CMS-edit-end */}
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-                <Briefcase size={32} className="text-university-blue" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-foreground/10 rounded-full mb-4">
+                <Briefcase size={32} className="text-primary-foreground" />
               </div>
-              <div className="text-5xl font-bold text-university-blue mb-2" id="sponsors-stat">
+              <div className="text-5xl font-bold text-primary-foreground mb-2" id="sponsors-stat">
                 <TextType 
                   text={['12+', '12+', '12+']}
                   typingSpeed={100}
                   pauseDuration={4000}
                   deletingSpeed={50}
                   showCursor={false}
-                  className="text-5xl font-bold text-university-blue"
+                  className="text-5xl font-bold text-primary-foreground"
                   initialDelay={1000}
                 />
               </div>
               {/* CMS-edit-start::sponsors-label */}
-              <p className="text-muted-foreground font-medium">Industry Partners</p>
+              <p className="text-primary-foreground/80 font-medium">Industry Partners</p>
               {/* CMS-edit-end */}
             </div>
           </div>
