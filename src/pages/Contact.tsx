@@ -82,13 +82,13 @@ const Contact = () => {
               <div className="space-y-6">
                 {/* CMS-edit-start::contact-details */}
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Mail size={20} className="text-primary" />
+                  <div className="flex-shrink-0 w-10 h-10 bg-university-blue/10 rounded-lg flex items-center justify-center">
+                    <Mail size={20} className="text-university-blue" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
                     <p className="text-muted-foreground">info@knoleadvisory.org</p>
-                    <p className="text-sm text-muted-foreground">We typically respond within 24 hours</p>
+                    <p className="text-sm text-muted-foreground">We look to respond within 24 hours</p>
                   </div>
                 </div>
 
@@ -100,7 +100,7 @@ const Contact = () => {
                     <h3 className="font-semibold text-foreground mb-1">Location</h3>
                     <p className="text-muted-foreground">University College London</p>
                     <p className="text-muted-foreground">Gower Street, London WC1E 6BT</p>
-                    <p className="text-sm text-muted-foreground">Student Union Building, Room 3.14</p>
+                    <p className="text-sm text-muted-foreground">Student Union Building</p>
                   </div>
                 </div>
 
@@ -110,15 +110,15 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Office Hours</h3>
-                    <p className="text-muted-foreground">Monday - Friday: 10:00 - 16:00</p>
-                    <p className="text-muted-foreground">Saturday: 12:00 - 15:00</p>
-                    <p className="text-sm text-muted-foreground">Closed Sundays and University holidays</p>
+                    <p className="text-muted-foreground">Monday - Friday: 9:00 - 17:00</p>
+                    <p className="text-muted-foreground">Saturday: 10:00 - 15:00</p>
+                    <p className="text-sm text-muted-foreground">Closed Sundays</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                    <Phone size={20} className="text-green-600" />
+                  <div className="flex-shrink-0 w-10 h-10 bg-university-blue/10 rounded-lg flex items-center justify-center">
+                    <Phone size={20} className="text-university-gold" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Phone</h3>
@@ -257,10 +257,10 @@ const Contact = () => {
           <div className="text-center mb-8">
             {/* CMS-edit-start::map-section */}
             <h2 className="text-3xl font-heading font-bold text-foreground mb-4">
-              Find Us on Campus
+              Find Us
             </h2>
             <p className="text-lg text-muted-foreground">
-              Visit us at the UCL Student Union Building during our office hours
+              We are based at the UCL Main Campus during our office hours
             </p>
             {/* CMS-edit-end */}
           </div>
