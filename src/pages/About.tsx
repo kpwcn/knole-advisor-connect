@@ -95,14 +95,14 @@ const About = () => {
       </section>
 
       {/* Founding Story */}
-      <section className="py-16 bg-muted/50">
+      <section className="py-16 bg-white">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             {/* CMS-edit-start::founding-story */}
-            <h2 className="text-3xl font-heading font-bold text-foreground mb-8">
+            <h2 className="text-3xl font-heading font-bold text-primary mb-8">
               Our Story
             </h2>
-            <div className="prose prose-lg text-muted-foreground mx-auto space-y-6">
+            <div className="prose prose-lg text-muted-primary mx-auto space-y-6">
               <p>
                 Knole Advisory was founded in 2024 by a group of ambitious UCL students who 
                 recognized the need for better career preparation and networking opportunities 
