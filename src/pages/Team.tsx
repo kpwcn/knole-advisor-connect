@@ -14,100 +14,36 @@ const Team = () => {
   // CMS-edit-start::team-members
   const teamMembers: TeamMember[] = [
     {
-      name: "Sarah Johnson",
+      name: "Evan Kok",
       position: "President",
-      bio: "Final year Economics student with internship experience at Goldman Sachs",
-      linkedin: "https://linkedin.com/in/sarah-johnson",
+      bio: "UCL Mathematics",
+      linkedin: "https://www.linkedin.com/in/evan-kok-7465152b8/",
       email: "president@knoleadvisory.org",
       image: "https://images.unsplash.com/photo-1494790108755-2616b6c31e8b?w=150&h=150&fit=crop&crop=face"
     },
     {
-      name: "Michael Chen",
-      position: "Vice President",
-      bio: "Mathematics and Finance student, former McKinsey intern",
-      linkedin: "https://linkedin.com/in/michael-chen",
-      email: "vp@knoleadvisory.org",
+      name: "Kevin Puzhou Wang",
+      position: "Co-President",
+      bio: "UCL ManSci",
+      linkedin: "https://www.linkedin.com/in/kpwcn/",
+      email: "co-president@knoleadvisory.org",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
     },
     {
-      name: "Emma Williams",
-      position: "Treasurer",
-      bio: "Business Administration student with expertise in financial planning",
-      linkedin: "https://linkedin.com/in/emma-williams",
-      email: "treasurer@knoleadvisory.org",
+      name: "Hao Ping Yau",
+      position: "Chairman",
+      bio: "LSE Finance",
+      linkedin: "https://www.linkedin.com/in/hao-ping-yau-9a391016a/",
+      email: "chair@knoleadvisory.org",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
     },
     {
-      name: "David Rodriguez",
-      position: "Secretary",
-      bio: "Political Economy student passionate about strategic consulting",
-      linkedin: "https://linkedin.com/in/david-rodriguez",
-      email: "secretary@knoleadvisory.org",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Aisha Patel",
-      position: "Events Director",
-      bio: "Management student specializing in event planning and corporate relations",
-      linkedin: "https://linkedin.com/in/aisha-patel",
+      name: "Vincent Pang",
+      position: "Events & Outreach Director",
+      bio: "UCL Sustainable Built Environments, Energy and Resources",
+      linkedin: "https://linkedin.com/in/",
       email: "events@knoleadvisory.org",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "James Thompson",
-      position: "Marketing Director",
-      bio: "Digital Marketing and Communications student with social media expertise",
-      linkedin: "https://linkedin.com/in/james-thompson",
-      email: "marketing@knoleadvisory.org",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Lisa Zhang",
-      position: "Partnerships Manager",
-      bio: "International Business student focused on corporate partnerships",
-      linkedin: "https://linkedin.com/in/lisa-zhang",
-      email: "partnerships@knoleadvisory.org",
-      image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Thomas Anderson",
-      position: "Workshop Coordinator",
-      bio: "Finance student with experience in financial modeling and analysis",
-      linkedin: "https://linkedin.com/in/thomas-anderson",
-      email: "workshops@knoleadvisory.org",
-      image: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Sophie Brown",
-      position: "Alumni Relations",
-      bio: "Psychology and Business student managing alumni networking programs",
-      linkedin: "https://linkedin.com/in/sophie-brown",
-      email: "alumni@knoleadvisory.org",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Marcus Johnson",
-      position: "Technology Officer",
-      bio: "Computer Science and Economics student developing digital solutions",
-      linkedin: "https://linkedin.com/in/marcus-johnson",
-      email: "tech@knoleadvisory.org",
-      image: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Olivia Davis",
-      position: "Mentorship Coordinator",
-      bio: "Psychology student passionate about career development and mentoring",
-      linkedin: "https://linkedin.com/in/olivia-davis",
-      email: "mentorship@knoleadvisory.org",
-      image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Ryan Kumar",
-      position: "Social Media Manager",
-      bio: "Media and Communications student managing our digital presence",
-      linkedin: "https://linkedin.com/in/ryan-kumar",
-      email: "social@knoleadvisory.org",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
     }
   ];
   // CMS-edit-end
@@ -124,7 +60,7 @@ const Team = () => {
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Dedicated students committed to creating exceptional opportunities for 
-              finance and consulting career development.
+              investement banking development.
             </p>
             {/* CMS-edit-end */}
           </div>
