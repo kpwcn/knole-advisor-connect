@@ -109,15 +109,6 @@ const About = () => {
                 in the finance and consulting sectors. What started as informal study groups 
                 has grown into one of UCL's most active and respected student societies.
               </p>
-              <p>
-                Since our founding, we have:
-              </p>
-              <ul className="text-left max-w-2xl mx-auto">
-                <li>Hosted over 100 industry events and workshops</li>
-                <li>Connected students with 50+ top-tier firms</li>
-                <li>Provided mentorship to 500+ society members</li>
-                <li>Achieved a 85% job placement rate in target industries</li>
-              </ul>
             </div>
             {/* CMS-edit-end */}
           </div>
