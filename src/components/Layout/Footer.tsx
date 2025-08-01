@@ -30,14 +30,14 @@ const Footer = () => {
               />
               <div>
                 <h3 className="text-xl font-heading font-bold">Knole Advisory</h3>
-                <p className="text-sm text-primary-foreground/80">Student Finance & Consulting Society</p>
+                <p className="text-sm text-primary-foreground/80">Student Investment Banking Society</p>
               </div>
             </div>
             
             {/* CMS-edit-start::footer-description */}
             <p className="text-primary-foreground/80 mb-6 max-w-md">
               Empowering students through finance education, professional development, 
-              and networking opportunities in the consulting industry.
+              and deal exposure in the investment banking industry.
             </p>
             {/* CMS-edit-end */}
 
@@ -72,9 +72,6 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/about" className="text-primary-foreground/80 transition-all duration-200 hover:scale-105">About Us</Link></li>
               <li><Link to="/team" className="text-primary-foreground/80 transition-all duration-200 hover:scale-105">Committee</Link></li>
-              <li><Link to="/events" className="text-primary-foreground/80 transition-all duration-200 hover:scale-105">Events</Link></li>
-              <li><Link to="/membership" className="text-primary-foreground/80 transition-all duration-200 hover:scale-105">Membership</Link></li>
-              <li><Link to="/partners" className="text-primary-foreground/80 transition-all duration-200 hover:scale-105">Partners</Link></li>
               <li><Link to="/contact" className="text-primary-foreground/80 transition-all duration-200 hover:scale-105">Contact</Link></li>
             </ul>
           </div>
@@ -108,9 +105,6 @@ const Footer = () => {
                 </a>
                 <a href="#" className="text-primary-foreground/60 transition-all duration-200 hover:scale-105" aria-label="Instagram">
                   <Instagram size={20} />
-                </a>
-                <a href="#" className="text-primary-foreground/60 transition-all duration-200 hover:scale-105" aria-label="Twitter">
-                  <Twitter size={20} />
                 </a>
               </div>
             </div>
