@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout/Layout';
 import { Target, Users, Award, Calendar } from 'lucide-react';
+import ShinyText from '@/components/ui/shiny-text';
 
 const About = () => {
   return (
@@ -13,8 +14,10 @@ const About = () => {
               About Knole Advisory
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Building the next generation of investment banking leaders through education, 
-              mentorship, and deal exposure.
+              <ShinyText speedInMs={3000}>
+                Building the next generation of investment banking leaders through education, 
+                mentorship, and deal exposure.
+              </ShinyText>
             </p>
             {/* CMS-edit-end */}
           </div>
