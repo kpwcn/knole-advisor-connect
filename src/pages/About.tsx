@@ -159,7 +159,7 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Juniors</h3>
-                    <p className="text-muted-foreground text-sm">Analst, Assosiate</p>
+                    <p className="text-muted-foreground text-sm">Analyst, Associate</p>
                   </div>
                 </div>
                 {/* CMS-edit-end */}
