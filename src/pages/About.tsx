@@ -1,5 +1,5 @@
 import Layout from '@/components/Layout/Layout';
-import { Target, Users, Award, Calendar } from 'lucide-react';
+import { Target, Users, Award, Calendar, Calculator, FileText, BarChart3, Handshake } from 'lucide-react';
 import ShinyText from '@/components/ui/shiny-text';
 import DecryptedText from '@/components/ui/DecryptedText';
 
@@ -60,33 +60,45 @@ const About = () => {
             
             <div className="university-card">
               <div className="space-y-6">
+                <h3 className="text-xl font-semibold text-foreground text-center mb-6">Learn how to:</h3>
+                
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-10 h-10 bg-university-blue/10 rounded-lg flex items-center justify-center">
-                    <Target size={20} className="text-university-blue" />
+                    <Calculator size={20} className="text-university-blue" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground">Excellence</h3>
-                    <p className="text-muted-foreground">Striving for the highest standards in everything we do</p>
+                    <h4 className="font-semibold text-foreground">Build full-stack valuation models</h4>
+                    <p className="text-muted-foreground">Deliverable DCFs, comps, and merger models from scratch. Analysts quantify a target's worth and see how pricing shifts under different scenarios.</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-10 h-10 bg-university-blue/10 rounded-lg flex items-center justify-center">
-                    <Users size={20} className="text-university-blue" />
+                    <FileText size={20} className="text-university-blue" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground">Inclusivity</h3>
-                    <p className="text-muted-foreground">Welcoming students from all backgrounds and disciplines</p>
+                    <h4 className="font-semibold text-foreground">Draft market-ready deal materials</h4>
+                    <p className="text-muted-foreground">Teams create teasers, information memoranda, and curated buyer lists. Learning how to package data into compelling narratives for clients.</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-10 h-10 bg-university-gold/10 rounded-lg flex items-center justify-center">
-                    <Award size={20} className="text-university-gold" />
+                    <BarChart3 size={20} className="text-university-gold" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground">Growth</h3>
-                    <p className="text-muted-foreground">Continuous learning and professional development</p>
+                    <h4 className="font-semibold text-foreground">Run live diligence & analytics sprints</h4>
+                    <p className="text-muted-foreground">Expect to design and execute data-driven tests on everything from customer churn to regulatory exposure.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-university-gold/10 rounded-lg flex items-center justify-center">
+                    <Handshake size={20} className="text-university-gold" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Lead client presentations and negotiations</h4>
+                    <p className="text-muted-foreground">Students front meetings with founders, bankers, and lawyers, defending their numbers and recommendations, gaining skills usually reserved for junior bankers.</p>
                   </div>
                 </div>
               </div>
