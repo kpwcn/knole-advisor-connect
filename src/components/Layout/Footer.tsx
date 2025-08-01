@@ -22,16 +22,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand & Description */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src="/lovable-uploads/ab060c40-f5d5-43c5-8320-c6d3fb36981f.png" 
-                alt="Knole Advisory Logo" 
-                className="h-10 w-10 rounded-full"
-              />
-              <div>
-                <h3 className="text-xl font-heading font-bold">Knole Advisory</h3>
-                <p className="text-sm text-primary-foreground/80">Student Investment Banking Society</p>
-              </div>
+            <div className="mb-4">
+              <h3 className="text-xl font-heading font-bold">Knole Advisory</h3>
+              <p className="text-sm text-primary-foreground/80">Student Investment Banking Society</p>
             </div>
             
             {/* CMS-edit-start::footer-description */}
