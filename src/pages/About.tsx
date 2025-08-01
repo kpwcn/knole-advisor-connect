@@ -14,7 +14,7 @@ const About = () => {
               About Knole Advisory
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              <ShinyText speedInMs={1000}>
+              <ShinyText speedInMs={5000}>
                 Building the next generation of investment banking leaders through education, 
                 mentorship, and deal exposure.
               </ShinyText>
