@@ -102,7 +102,7 @@ const About = () => {
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">
               Our Story
             </h2>
-            <div className="prose prose-lg text-muted-primary mx-auto space-y-6">
+            <div className="prose prose-lg text-primary mx-auto space-y-6">
               <p>
                 Knole Advisory was founded in 2024 by a group of ambitious UCL students who 
                 recognized the need for better career preparation and networking opportunities 
