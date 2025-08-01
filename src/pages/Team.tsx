@@ -27,7 +27,7 @@ const Team = () => {
       bio: "UCL ManSci",
       linkedin: "https://www.linkedin.com/in/kpwcn/",
       email: "co-president@knoleadvisory.org",
-      image: "/lovable-uploads/Kev.JPG"
+      image: "/lovable-uploads/Kev.jpg"
     },
     {
       name: "Hao Ping Yau",
@@ -35,7 +35,7 @@ const Team = () => {
       bio: "LSE Finance",
       linkedin: "https://www.linkedin.com/in/hao-ping-yau-9a391016a/",
       email: "chair@knoleadvisory.org",
-      image: "/lovable-uploads/haoping.JPG"
+      image: "/lovable-uploads/haoping.jpg"
     },
     {
       name: "Vincent Pang",
