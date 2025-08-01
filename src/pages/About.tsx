@@ -23,7 +23,7 @@ const About = () => {
 
       {/* Mission Statement */}
       <section className="py-16 relative bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/89e98e58-9e6f-470f-b0e3-09baa2d72dd5.png)'}}>
-        <div className="absolute inset-0 bg-green-600/60"></div>
+        <div className="absolute inset-0 bg-green-900/50"></div>
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
