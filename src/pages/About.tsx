@@ -154,7 +154,7 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Directors</h3>
-                    <p className="text-muted-foreground text-sm">Sector VP/p>
+                    <p className="text-muted-foreground text-sm">Sector VP</p>
                   </div>
                 </div>
 
