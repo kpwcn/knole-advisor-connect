@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Users, Calendar, Briefcase, TrendingUp, Award, Target } from 'lucide-react';
 import Layout from '@/components/Layout/Layout';
 import { Button } from '@/components/ui/button';
+import TextType from '@/components/ui/text-type';
 
 interface Stats {
   members: number;
@@ -187,7 +188,14 @@ const Home = () => {
                 <Users size={32} className="text-university-blue" />
               </div>
               <div className="text-5xl font-bold text-university-blue mb-2" id="members-stat">
-                {stats.members}+
+                <TextType 
+                  text={[`${stats.members}+`, `${stats.members - 50}+`, `${stats.members + 25}+`]}
+                  typingSpeed={100}
+                  pauseDuration={4000}
+                  deletingSpeed={50}
+                  showCursor={false}
+                  className="text-5xl font-bold text-university-blue"
+                />
               </div>
               {/* CMS-edit-start::members-label */}
               <p className="text-muted-foreground font-medium">Sectors Covered</p>
@@ -199,7 +207,15 @@ const Home = () => {
                 <Calendar size={32} className="text-university-blue" />
               </div>
               <div className="text-5xl font-bold text-university-blue mb-2" id="events-stat">
-                {stats.eventsPerYear}+
+                <TextType 
+                  text={[`${stats.eventsPerYear}+`, `${stats.eventsPerYear - 5}+`, `${stats.eventsPerYear + 8}+`]}
+                  typingSpeed={100}
+                  pauseDuration={4000}
+                  deletingSpeed={50}
+                  showCursor={false}
+                  className="text-5xl font-bold text-university-blue"
+                  initialDelay={500}
+                />
               </div>
               {/* CMS-edit-start::events-label */}
               <p className="text-muted-foreground font-medium">Partner Universities</p>
@@ -211,7 +227,15 @@ const Home = () => {
                 <Briefcase size={32} className="text-university-blue" />
               </div>
               <div className="text-5xl font-bold text-university-blue mb-2" id="sponsors-stat">
-                {stats.sponsors}+
+                <TextType 
+                  text={[`${stats.sponsors}+`, `${stats.sponsors - 3}+`, `${stats.sponsors + 5}+`]}
+                  typingSpeed={100}
+                  pauseDuration={4000}
+                  deletingSpeed={50}
+                  showCursor={false}
+                  className="text-5xl font-bold text-university-blue"
+                  initialDelay={1000}
+                />
               </div>
               {/* CMS-edit-start::sponsors-label */}
               <p className="text-muted-foreground font-medium">Industry Partners</p>
