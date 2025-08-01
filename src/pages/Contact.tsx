@@ -132,22 +132,6 @@ const Contact = () => {
               {/* Quick Actions */}
               <div className="mt-8 space-y-4">
                 <h3 className="text-lg font-semibold text-foreground">Quick Actions</h3>
-                
-                <Button 
-                  className="w-full university-btn-primary" 
-                  asChild
-                >
-                  <a 
-                    href="https://calendly.com/knole-advisory/consultation" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center space-x-2"
-                  >
-                    <Calendar size={20} />
-                    <span>Book a Call</span>
-                    <ExternalLink size={16} />
-                  </a>
-                </Button>
 
                 <Button variant="outline" className="w-full" asChild>
                   <a href="/membership">Join Our Society</a>
@@ -205,7 +189,7 @@ const Contact = () => {
                         onChange={handleInputChange}
                         required
                         className="mt-1"
-                        placeholder="your.email@ucl.ac.uk"
+                        placeholder="your.email@domain.com"
                       />
                     </div>
                   </div>
