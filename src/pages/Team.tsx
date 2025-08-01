@@ -27,7 +27,7 @@ const Team = () => {
       bio: "UCL ManSci",
       linkedin: "https://www.linkedin.com/in/kpwcn/",
       email: "co-president@knoleadvisory.org",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+      image: "/lovable-uploads/Kev.JPG"
     },
     {
       name: "Hao Ping Yau",
@@ -35,7 +35,7 @@ const Team = () => {
       bio: "LSE Finance",
       linkedin: "https://www.linkedin.com/in/hao-ping-yau-9a391016a/",
       email: "chair@knoleadvisory.org",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+      image: "/lovable-uploads/haoping.JPG"
     },
     {
       name: "Vincent Pang",
