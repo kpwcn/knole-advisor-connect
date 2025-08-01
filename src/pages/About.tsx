@@ -124,9 +124,15 @@ const About = () => {
                 cross-border valuation modelling and real dialogue with C-suite executives.
               </p>
               <p>
-                The result is hands-on exposure to live, multi-jurisdiction deals experience that 
-                sharpens analytical judgement and financial fluency far beyond what a classroom 
-                or short internship can deliver.
+                <DecryptedText
+                  text="The result is hands-on exposure to live, multi-jurisdiction deals experience that sharpens analytical judgement and financial fluency far beyond what a classroom or short internship can deliver."
+                  animateOn="view"
+                  revealDirection="center"
+                  speed={40}
+                  maxIterations={20}
+                  className="text-primary"
+                  encryptedClassName="text-muted-foreground"
+                />
               </p>
             </div>
             {/* CMS-edit-end */}
