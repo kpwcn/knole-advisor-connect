@@ -269,10 +269,10 @@ const Home = () => {
           <div className="text-center mb-12">
             {/* CMS-edit-start::sponsors-title */}
             <h2 className="text-3xl font-heading font-bold text-foreground mb-4">
-              Where Our Analysts End Up
+              Team Expertise and Experience
             </h2>
             <p className="text-lg text-muted-foreground">
-              Leading firms in finance and consulting
+              Our members come from leading firms in IB and Finance
             </p>
             {/* CMS-edit-end */}
           </div>
