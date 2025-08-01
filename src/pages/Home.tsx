@@ -57,8 +57,8 @@ const Home = () => {
     const fetchData = () => {
       // Mock stats data
       setStats({
-        members: 250,
-        eventsPerYear: 24,
+        members: 6,
+        eventsPerYear: 11,
         sponsors: 12
       });
 
@@ -189,7 +189,7 @@ const Home = () => {
               </div>
               <div className="text-5xl font-bold text-university-blue mb-2" id="members-stat">
                 <TextType 
-                  text={[`${stats.members}+`, `${stats.members - 50}+`, `${stats.members + 25}+`]}
+                  text={['6+', '6+', '6+']}
                   typingSpeed={100}
                   pauseDuration={4000}
                   deletingSpeed={50}
@@ -208,7 +208,7 @@ const Home = () => {
               </div>
               <div className="text-5xl font-bold text-university-blue mb-2" id="events-stat">
                 <TextType 
-                  text={[`${stats.eventsPerYear}+`, `${stats.eventsPerYear - 5}+`, `${stats.eventsPerYear + 8}+`]}
+                  text={['11', '11', '11']}
                   typingSpeed={100}
                   pauseDuration={4000}
                   deletingSpeed={50}
@@ -228,7 +228,7 @@ const Home = () => {
               </div>
               <div className="text-5xl font-bold text-university-blue mb-2" id="sponsors-stat">
                 <TextType 
-                  text={[`${stats.sponsors}+`, `${stats.sponsors - 3}+`, `${stats.sponsors + 5}+`]}
+                  text={['12+', '12+', '12+']}
                   typingSpeed={100}
                   pauseDuration={4000}
                   deletingSpeed={50}
