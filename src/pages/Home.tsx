@@ -184,7 +184,7 @@ const Home = () => {
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-foreground/10 rounded-full mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-4">
                 <Users size={32} className="text-primary-foreground" />
               </div>
               <div className="text-5xl font-bold text-primary-foreground mb-2" id="members-stat">
@@ -203,7 +203,7 @@ const Home = () => {
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-foreground/10 rounded-full mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-4">
                 <Calendar size={32} className="text-primary-foreground" />
               </div>
               <div className="text-5xl font-bold text-primary-foreground mb-2" id="events-stat">
@@ -223,7 +223,7 @@ const Home = () => {
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-foreground/10 rounded-full mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-4">
                 <Briefcase size={32} className="text-primary-foreground" />
               </div>
               <div className="text-5xl font-bold text-primary-foreground mb-2" id="sponsors-stat">
