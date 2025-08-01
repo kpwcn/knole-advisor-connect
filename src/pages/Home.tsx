@@ -180,7 +180,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      <section className="py-16 bg-white text-primary-foreground">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -208,7 +208,7 @@ const Home = () => {
               </div>
               <div className="text-5xl font-bold text-primary-foreground mb-2" id="events-stat">
                 <TextType 
-                  text={['11', '11', '11']}
+                  text={['20+', '20+', '20+']}
                   typingSpeed={100}
                   pauseDuration={4000}
                   deletingSpeed={50}
