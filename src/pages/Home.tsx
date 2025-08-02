@@ -262,7 +262,7 @@ const Home = () => {
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-              About
+              How We Provide Value
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8" />
             <p className="text-xl text-primary max-w-3xl mx-auto leading-relaxed">
