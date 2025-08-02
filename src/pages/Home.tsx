@@ -259,18 +259,18 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center group/container">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <div className="group/card p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-500 hover:shadow-lg hover:shadow-primary/10 hover:scale-110 hover:z-50 relative group-hover/container:hover:translate-x-0 group-hover/container:hover:translate-y-0 group-hover/container:[&:not(:hover)]:opacity-0 group-hover/container:[&:not(:hover)]:-translate-x-full">
+              <div className="group/card p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-500 hover:shadow-lg hover:shadow-primary/10 hover:scale-110 hover:z-50 relative hover:fixed hover:top-1/2 hover:left-1/2 hover:-translate-x-1/2 hover:-translate-y-1/2">
                 <h3 className="text-3xl font-bold text-foreground mb-4 text-center">Our Mission</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-center">
                   To provide students with unparalleled access to investment banking knowledge, real deal experience, and industry connections that shape tomorrow's financial leaders.
                 </p>
               </div>
 
-              <div className="group/card p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-500 hover:shadow-lg hover:shadow-primary/10 hover:scale-110 hover:z-50 relative group-hover/container:hover:translate-x-0 group-hover/container:hover:translate-y-0 group-hover/container:[&:not(:hover)]:opacity-0 group-hover/container:[&:not(:hover)]:-translate-x-full">
+              <div className="group/card p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-500 hover:shadow-lg hover:shadow-primary/10 hover:scale-110 hover:z-50 relative hover:fixed hover:top-1/2 hover:left-1/2 hover:-translate-x-1/2 hover:-translate-y-1/2">
                 <h3 className="text-3xl font-bold text-foreground mb-4 text-center">Our Impact</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-center">
                   Since our founding, we've successfully placed members at top-tier investment banks and advisory firms, creating a network that spans the global financial industry.
                 </p>
               </div>
@@ -278,7 +278,7 @@ const Home = () => {
 
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-3xl" />
-              <div className="group/card relative bg-primary/90 backdrop-blur-sm rounded-3xl p-8 border border-border/50 transition-all duration-500 hover:scale-110 hover:z-50 group-hover/container:hover:translate-x-0 group-hover/container:hover:translate-y-0 group-hover/container:[&:not(:hover)]:opacity-0 group-hover/container:[&:not(:hover)]:translate-x-full">
+              <div className="group/card relative bg-primary/90 backdrop-blur-sm rounded-3xl p-8 border border-border/50 transition-all duration-500 hover:scale-110 hover:z-50 hover:fixed hover:top-1/2 hover:left-1/2 hover:-translate-x-1/2 hover:-translate-y-1/2">
                 <h3 className="text-3xl font-bold text-foreground text-center mb-6">Excellence in Finance</h3>
                 <p className="text-muted-foreground text-center leading-relaxed">
                   Our rigorous training programs and mentorship opportunities ensure every member develops the skills and confidence needed to excel in competitive finance roles.
