@@ -137,7 +137,7 @@ const Team = () => {
               University Coverage
             </h2>
             <p className="text-sm text-primary">
-              Supporting students across London's leading institutions
+              Undergraduate, Masters, and PhD students from UK's best universities
             </p>
           </div>
           
