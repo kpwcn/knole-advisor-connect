@@ -165,7 +165,7 @@ const Home = () => {
             {/* CMS-edit-end */}
 
             <div className="flex justify-center">
-              <Link to="/contact">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZ86Rhmu8G6kW-wonOlSxF9g3R0D3ma8d-usNSDq7fyT1DnQ/viewform" target="_blank" rel="noopener noreferrer">
                 <Button 
                   id="join-cta"
                   size="lg"
@@ -173,7 +173,7 @@ const Home = () => {
                 >
                   Apply Today
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -307,14 +307,14 @@ const Home = () => {
           {/* CMS-edit-end */}
           
           <div className="flex justify-center">
-            <Link to="/contact">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZ86Rhmu8G6kW-wonOlSxF9g3R0D3ma8d-usNSDq7fyT1DnQ/viewform" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg"
                 className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8 py-3"
               >
                 Join Today
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
