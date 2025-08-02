@@ -245,6 +245,73 @@ const Home = () => {
         </div>
       </section>
 
+      {/* About Us Section */}
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent opacity-30" />
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-6">
+              About Us
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8" />
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              We are London's premier student-run investment banking society, bridging the gap between academic excellence and real-world financial expertise.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div className="group p-6 bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                    <Target className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">Our Mission</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  To provide students with unparalleled access to investment banking knowledge, real deal experience, and industry connections that shape tomorrow's financial leaders.
+                </p>
+              </div>
+
+              <div className="group p-6 bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-secondary to-primary rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                    <TrendingUp className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">Our Impact</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Since our founding, we've successfully placed members at top-tier investment banks and advisory firms, creating a network that spans the global financial industry.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-3xl" />
+              <div className="relative bg-card/80 backdrop-blur-sm rounded-3xl p-8 border border-border/50">
+                <div className="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl mx-auto mb-6 shadow-lg">
+                  <Award className="w-10 h-10 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground text-center mb-4">Excellence in Finance</h3>
+                <p className="text-muted-foreground text-center leading-relaxed mb-6">
+                  Our rigorous training programs and mentorship opportunities ensure every member develops the skills and confidence needed to excel in competitive finance roles.
+                </p>
+                <div className="flex justify-center space-x-4">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary">98%</div>
+                    <div className="text-sm text-muted-foreground">Success Rate</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary">£2M+</div>
+                    <div className="text-sm text-muted-foreground">Deals Analyzed</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What We Offer Section */}
       <section className="py-16 bg-background">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
