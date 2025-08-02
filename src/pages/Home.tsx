@@ -365,14 +365,14 @@ const Home = () => {
       </section>
 
       {/* Sponsors Section */}
-      <section className="py-12 bg-accent text-accent-foreground">
+      <section className="py-12 bg-white text-accent-foreground">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             {/* CMS-edit-start::sponsors-title */}
-            <h2 className="text-3xl font-heading font-bold text-foreground mb-4">
+            <h2 className="text-3xl font-heading font-bold text-primamry mb-4">
               Team Expertise and Experience
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-primamry">
               Our members come from leading firms in IB and Finance
             </p>
             {/* CMS-edit-end */}
