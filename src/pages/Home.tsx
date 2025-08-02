@@ -264,9 +264,9 @@ const Home = () => {
       </section>
 
       {/* Sponsors Section */}
-      <section className="py-16 bg-accent text-accent-foreground">
+      <section className="py-12 bg-accent text-accent-foreground">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             {/* CMS-edit-start::sponsors-title */}
             <h2 className="text-3xl font-heading font-bold text-foreground mb-4">
               Team Expertise and Experience
@@ -290,14 +290,6 @@ const Home = () => {
                 />
               </div>
             ))}
-          </div>
-
-          <div className="text-center mt-8">
-            <Link to="/contact">
-              <Button variant="outline" className="px-6">
-                Learn More
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
