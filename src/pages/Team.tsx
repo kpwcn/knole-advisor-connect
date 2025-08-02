@@ -140,19 +140,27 @@ const Team = () => {
           </p>
           {/* CMS-edit-end */}
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <a 
               href="https://docs.google.com/forms/d/e/1FAIpQLSdZ86Rhmu8G6kW-wonOlSxF9g3R0D3ma8d-usNSDq7fyT1DnQ/viewform?usp=header"
               className="university-btn-primary"
             >
               Express Interest
             </a>
-            <a 
-              href="/contact"
-              className="university-btn-primary"
-            >
-              Learn More
-            </a>
+          </div>
+          
+          <div className="mt-12 text-center">
+            <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+              Stay updated with committee opportunities and exclusive insights about investment banking careers.
+            </p>
+            <div className="flex justify-center">
+              <a 
+                href="mailto:info@knoleadvisory.org?subject=Mailing List Subscription"
+                className="university-btn-primary"
+              >
+                Join Our Mailing List
+              </a>
+            </div>
           </div>
         </div>
       </section>
