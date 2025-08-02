@@ -261,7 +261,7 @@ const Home = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <div className="group p-6 bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
+              <div className="group p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                     <Target className="w-6 h-6 text-white" />
@@ -273,7 +273,7 @@ const Home = () => {
                 </p>
               </div>
 
-              <div className="group p-6 bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
+              <div className="group p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                     <TrendingUp className="w-6 h-6 text-white" />
@@ -288,7 +288,7 @@ const Home = () => {
 
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-3xl" />
-              <div className="relative bg-card/80 backdrop-blur-sm rounded-3xl p-8 border border-border/50">
+              <div className="relative bg-primary/90 backdrop-blur-sm rounded-3xl p-8 border border-border/50">
                 <div className="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl mx-auto mb-6 shadow-lg">
                   <Award className="w-10 h-10 text-white" />
                 </div>
