@@ -55,6 +55,7 @@ const Home = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [videoError, setVideoError] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const [sectionRef, setSectionRef] = useState<HTMLElement | null>(null);
 
   useEffect(() => {
     // Simulate fetching data from JSON files
@@ -80,7 +81,9 @@ const Home = () => {
     fetchData();
 
     // Handle scroll for image fading effect
-    const handleScroll = () => setScrollY(window.scrollY);
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
     window.addEventListener('scroll', handleScroll);
 
     // Test if video file exists
@@ -124,6 +127,24 @@ const Home = () => {
   const handleVideoCanPlay = () => {
     console.log('🎬 Video can start playing');
   };
+
+  // Calculate image opacity based on section scroll position
+  const getSectionScrollProgress = () => {
+    if (!sectionRef) return 0;
+    const rect = sectionRef.getBoundingClientRect();
+    const sectionTop = rect.top + window.scrollY;
+    const sectionHeight = rect.height;
+    const viewportHeight = window.innerHeight;
+    
+    // Calculate how far through the section we've scrolled
+    const scrollStart = sectionTop - viewportHeight;
+    const scrollEnd = sectionTop + sectionHeight;
+    const progress = Math.max(0, Math.min(1, (scrollY - scrollStart) / (scrollEnd - scrollStart)));
+    
+    return progress;
+  };
+
+  const scrollProgress = getSectionScrollProgress();
 
   return (
     <Layout title="Knole Advisory - Student Finance & Consulting Society">
@@ -256,7 +277,7 @@ const Home = () => {
       </section>
 
       {/* About Us Section */}
-      <section className="py-8 bg-white relative overflow-hidden">
+      <section ref={setSectionRef} className="py-8 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent opacity-30" />
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
@@ -269,7 +290,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6">
               <div className="p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50">
                 <h3 className="text-3xl font-bold text-foreground mb-4 text-center">Our Mission</h3>
@@ -293,23 +314,27 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="relative w-full h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl overflow-hidden border-8 border-primary/30 shadow-2xl">
+            <div className="relative order-first lg:order-last">
+              <div className="relative w-full h-[500px] bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl overflow-hidden border-8 border-primary/30 shadow-2xl">
                 <div 
                   className="absolute inset-0 transition-opacity duration-1000"
-                  style={{ opacity: Math.max(0, Math.min(1, 1 - (scrollY - 200) / 300)) }}
+                  style={{ opacity: scrollProgress < 0.33 ? 1 - (scrollProgress / 0.33) : 0 }}
                 >
                   <img src={codeMonitor} alt="Code on monitor" className="w-full h-full object-cover" />
                 </div>
                 <div 
                   className="absolute inset-0 transition-opacity duration-1000"
-                  style={{ opacity: Math.max(0, Math.min(1, (scrollY - 200) / 300 - (scrollY - 500) / 300)) }}
+                  style={{ 
+                    opacity: scrollProgress >= 0.33 && scrollProgress < 0.66 
+                      ? Math.min(1, (scrollProgress - 0.33) / 0.33) * (1 - Math.max(0, (scrollProgress - 0.66) / 0.33))
+                      : 0 
+                  }}
                 >
                   <img src={lightbulb} alt="Innovation lightbulb" className="w-full h-full object-cover" />
                 </div>
                 <div 
                   className="absolute inset-0 transition-opacity duration-1000"
-                  style={{ opacity: Math.max(0, Math.min(1, (scrollY - 500) / 300)) }}
+                  style={{ opacity: scrollProgress >= 0.66 ? (scrollProgress - 0.66) / 0.33 : 0 }}
                 >
                   <img src={codingLaptop} alt="Coding on laptop" className="w-full h-full object-cover" />
                 </div>
