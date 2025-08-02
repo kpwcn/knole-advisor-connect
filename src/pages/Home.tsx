@@ -254,7 +254,7 @@ const Home = () => {
               About
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8" />
-            <p className="text-xl text-muted-primary max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-primary max-w-3xl mx-auto leading-relaxed">
               We are London's only student-run investment bank, being first to combine academic theory and real-world financial expertise.
             </p>
           </div>
@@ -263,7 +263,7 @@ const Home = () => {
             <div className="space-y-6">
               <div className="group p-6 bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                     <Target className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Our Mission</h3>
@@ -275,7 +275,7 @@ const Home = () => {
 
               <div className="group p-6 bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-secondary to-primary rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                     <TrendingUp className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Our Impact</h3>
