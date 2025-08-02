@@ -273,21 +273,47 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
             <div className="space-y-6">
               <div className="p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50">
-                <h3 className="text-3xl font-bold text-foreground mb-4 text-center">Our Members</h3>
+                <div className="text-3xl font-bold text-foreground mb-4 text-center">
+                  <TextType 
+                    text={["Our Members", "Our Members", "Our Members"]}
+                    typingSpeed={75}
+                    pauseDuration={1500}
+                    showCursor={true}
+                    cursorCharacter="|"
+                  />
+                </div>
                 <p className="text-muted-foreground leading-relaxed text-center">
                   Live, mentored deal experience. Build valuation models from scratch, brief founders, and graduate with desk-ready skills and standout CV lines.
                 </p>
               </div>
 
               <div className="p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50">
-                <h3 className="text-3xl font-bold text-foreground mb-4 text-center">Our Clients</h3>
+                <div className="text-3xl font-bold text-foreground mb-4 text-center">
+                  <TextType 
+                    text={["Our Clients", "Our Clients", "Our Clients"]}
+                    typingSpeed={75}
+                    pauseDuration={1500}
+                    showCursor={true}
+                    cursorCharacter="|"
+                    initialDelay={500}
+                  />
+                </div>
                 <p className="text-muted-foreground leading-relaxed text-center">
                   Pro bono, data-driven M&A support that delivers investor-grade models, curated buyer lists, and student perspectives you can act on.
                 </p>
               </div>
 
               <div className="p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50">
-                <h3 className="text-3xl font-bold text-foreground text-center mb-4">Our Sponsors</h3>
+                <div className="text-3xl font-bold text-foreground text-center mb-4">
+                  <TextType 
+                    text={["Our Sponsors", "Our Sponsors", "Our Sponsors"]}
+                    typingSpeed={75}
+                    pauseDuration={1500}
+                    showCursor={true}
+                    cursorCharacter="|"
+                    initialDelay={1000}
+                  />
+                </div>
                 <p className="text-muted-foreground text-center leading-relaxed">
                   A direct pipeline to top student talent and high-visibility branding across our reports, deal deliverables, and campus channels. Measurable impact, zero fluff.
                 </p>
