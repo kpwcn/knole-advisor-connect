@@ -147,7 +147,7 @@ const Team = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSdZ86Rhmu8G6kW-wonOlSxF9g3R0D3ma8d-usNSDq7fyT1DnQ/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              className="university-btn-primary"
+              className="bg-white text-university-green border border-university-green/20 hover:bg-university-green/5 transition-smooth px-8 py-3 rounded-lg font-semibold"
             >
               Apply
             </a>
@@ -160,7 +160,7 @@ const Team = () => {
             <div className="flex justify-center">
               <a 
                 href="/contact"
-                className="university-btn-primary"
+                className="bg-white text-university-green border border-university-green/20 hover:bg-university-green/5 transition-smooth px-8 py-3 rounded-lg font-semibold"
               >
                 Email Us
               </a>
