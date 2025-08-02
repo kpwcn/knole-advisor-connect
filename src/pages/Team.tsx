@@ -144,7 +144,9 @@ const Team = () => {
           
           <div className="flex justify-center">
             <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdZ86Rhmu8G6kW-wonOlSxF9g3R0D3ma8d-usNSDq7fyT1DnQ/viewform?usp=header"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdZ86Rhmu8G6kW-wonOlSxF9g3R0D3ma8d-usNSDq7fyT1DnQ/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="university-btn-primary"
             >
               Express Interest
@@ -157,7 +159,7 @@ const Team = () => {
             </p>
             <div className="flex justify-center">
               <a 
-                href="mailto:info@knoleadvisory.org?subject=Mailing List Subscription"
+                href="/contact"
                 className="university-btn-primary"
               >
                 Join Our Mailing List
