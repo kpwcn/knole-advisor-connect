@@ -286,7 +286,7 @@ const Home = () => {
                 <img
                   src={sponsor.logo}
                   alt={sponsor.name}
-                  className="h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-200"
+                  className="h-12 w-auto object-contain transition-all duration-200"
                 />
               </div>
             ))}
