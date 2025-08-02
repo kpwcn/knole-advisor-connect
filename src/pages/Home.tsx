@@ -250,12 +250,12 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent opacity-30" />
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-6">
-              About Us
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
+              About
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8" />
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              We are London's premier student-run investment banking society, bridging the gap between academic excellence and real-world financial expertise.
+            <p className="text-xl text-muted-primary max-w-3xl mx-auto leading-relaxed">
+              We are London's only student-run investment bank, being first to combine academic theory and real-world financial expertise.
             </p>
           </div>
 
