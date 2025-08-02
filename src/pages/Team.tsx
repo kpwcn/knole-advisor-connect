@@ -130,66 +130,77 @@ const Team = () => {
       </section>
 
       {/* University Coverage */}
-      <section className="py-12 bg-muted/30">
+      <section className="py-12 bg-white">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-heading font-bold text-foreground mb-2">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-2">
               University Coverage
             </h2>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-primary">
               Supporting students across London's leading institutions
             </p>
           </div>
           
           <div className="flex justify-center">
-            <div className="inline-flex items-center space-x-8 overflow-hidden">
+            <div className="inline-flex items-center space-x-8 overflow-hidden bg-white p-4 rounded-lg">
               <div className="animate-slide flex items-center space-x-8">
-                <img 
-                  src="/logos/ucl-logo.png" 
-                  alt="UCL" 
-                  className="h-12 w-12 object-contain opacity-70 hover:opacity-100 transition-smooth"
-                />
-                <img 
-                  src="/logos/lse-logo.png" 
-                  alt="LSE" 
-                  className="h-12 w-12 object-contain opacity-70 hover:opacity-100 transition-smooth"
-                />
-                <img 
-                  src="/logos/imperial-logo.png" 
-                  alt="Imperial College London" 
-                  className="h-12 w-12 object-contain opacity-70 hover:opacity-100 transition-smooth"
-                />
-                <img 
-                  src="/logos/kings-logo.png" 
-                  alt="King's College London" 
-                  className="h-12 w-12 object-contain opacity-70 hover:opacity-100 transition-smooth"
-                />
-                <img 
-                  src="/oxford-logo.png" 
-                  alt="Oxford University" 
-                  className="h-12 w-12 object-contain opacity-70 hover:opacity-100 transition-smooth"
-                />
-                <img 
-                  src="/logos/cambridge-logo.png" 
-                  alt="Cambridge University" 
-                  className="h-12 w-12 object-contain opacity-70 hover:opacity-100 transition-smooth"
-                />
-                <img 
-                  src="/logos/warwick-logo.png" 
-                  alt="Warwick University" 
-                  className="h-12 w-12 object-contain opacity-70 hover:opacity-100 transition-smooth"
-                />
+                <div className="bg-white p-2 rounded-lg">
+                  <img 
+                    src="/logos/ucl-logo.png" 
+                    alt="UCL" 
+                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                  />
+                </div>
+                <div className="bg-white p-2 rounded-lg">
+                  <img 
+                    src="/logos/lse-logo.png" 
+                    alt="LSE" 
+                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                  />
+                </div>
+                <div className="bg-white p-2 rounded-lg">
+                  <img 
+                    src="/logos/imperial-logo.png" 
+                    alt="Imperial College London" 
+                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                  />
+                </div>
+                <div className="bg-white p-2 rounded-lg">
+                  <img 
+                    src="/logos/oxford-logo.png" 
+                    alt="Oxford University" 
+                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                  />
+                </div>
+                <div className="bg-white p-2 rounded-lg">
+                  <img 
+                    src="/logos/cambridge-logo.png" 
+                    alt="Cambridge University" 
+                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                  />
+                </div>
+                <div className="bg-white p-2 rounded-lg">
+                  <img 
+                    src="/logos/warwick-logo.png" 
+                    alt="Warwick University" 
+                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                  />
+                </div>
                 {/* Duplicate for seamless loop */}
-                <img 
-                  src="/logos/ucl-logo.png" 
-                  alt="UCL" 
-                  className="h-12 w-12 object-contain opacity-70 hover:opacity-100 transition-smooth"
-                />
-                <img 
-                  src="/logos/lse-logo.png" 
-                  alt="LSE" 
-                  className="h-12 w-12 object-contain opacity-70 hover:opacity-100 transition-smooth"
-                />
+                <div className="bg-white p-2 rounded-lg">
+                  <img 
+                    src="/logos/ucl-logo.png" 
+                    alt="UCL" 
+                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                  />
+                </div>
+                <div className="bg-white p-2 rounded-lg">
+                  <img 
+                    src="/logos/lse-logo.png" 
+                    alt="LSE" 
+                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                  />
+                </div>
               </div>
             </div>
           </div>
