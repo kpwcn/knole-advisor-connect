@@ -146,42 +146,42 @@ const Team = () => {
               <div className="animate-slide flex items-center space-x-8">
                 <div className="bg-white p-2 rounded-lg">
                   <img 
-                    src="/logos/ucl-logo.png" 
+                    src="/lovable-uploads/3e6c63c3-5868-4fd8-9dec-0d19134067f5.png" 
                     alt="UCL" 
                     className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
                   />
                 </div>
                 <div className="bg-white p-2 rounded-lg">
                   <img 
-                    src="/logos/lse-logo.png" 
+                    src="/lovable-uploads/22935965-1fdb-4cf8-925d-b86a8e97c98e.png" 
                     alt="LSE" 
                     className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
                   />
                 </div>
                 <div className="bg-white p-2 rounded-lg">
                   <img 
-                    src="/logos/imperial-logo.png" 
+                    src="/lovable-uploads/e881c7ab-7f60-46d0-89e5-9445ce3f47c3.png" 
                     alt="Imperial College London" 
                     className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
                   />
                 </div>
                 <div className="bg-white p-2 rounded-lg">
                   <img 
-                    src="/logos/oxford-logo.png" 
+                    src="/lovable-uploads/035bcf27-a4d6-4870-bb5a-96d74af83756.png" 
                     alt="Oxford University" 
                     className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
                   />
                 </div>
                 <div className="bg-white p-2 rounded-lg">
                   <img 
-                    src="/logos/cambridge-logo.png" 
+                    src="/lovable-uploads/c14fbff3-5e1e-4985-a9f4-1d267163a6bc.png" 
                     alt="Cambridge University" 
                     className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
                   />
                 </div>
                 <div className="bg-white p-2 rounded-lg">
                   <img 
-                    src="/logos/warwick-logo.png" 
+                    src="/lovable-uploads/55f8c9df-9cc3-4e12-bfb9-8322fed734c2.png" 
                     alt="Warwick University" 
                     className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
                   />
@@ -189,14 +189,14 @@ const Team = () => {
                 {/* Duplicate for seamless loop */}
                 <div className="bg-white p-2 rounded-lg">
                   <img 
-                    src="/logos/ucl-logo.png" 
+                    src="/lovable-uploads/3e6c63c3-5868-4fd8-9dec-0d19134067f5.png" 
                     alt="UCL" 
                     className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
                   />
                 </div>
                 <div className="bg-white p-2 rounded-lg">
                   <img 
-                    src="/logos/lse-logo.png" 
+                    src="/lovable-uploads/22935965-1fdb-4cf8-925d-b86a8e97c98e.png" 
                     alt="LSE" 
                     className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
                   />
