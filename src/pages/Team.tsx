@@ -43,7 +43,7 @@ const Team = () => {
       bio: "UCL Sustainable Built Environments, Energy and Resources",
       linkedin: "https://linkedin.com/in/",
       email: "events@knoleadvisory.org",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
+      image: ""
     }
   ];
   // CMS-edit-end
@@ -58,8 +58,8 @@ const Team = () => {
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-6">
               Meet Our Committee
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Dedicated students committed to creating exceptional opportunities for 
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Dedicated student team committed to creating unique opportunities for 
               investement banking development.
             </p>
             {/* CMS-edit-end */}
@@ -134,11 +134,11 @@ const Team = () => {
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* CMS-edit-start::join-committee-cta */}
           <h2 className="text-3xl font-heading font-bold text-foreground mb-4">
-            Interested in Joining Our Committee?
+            Interested in Joining Our Analyst Class?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             We're always looking for passionate students to help shape the future of 
-            Knole Advisory. Committee applications open at the start of each academic year.
+            Knole Advisory. Analyst applications open at the start of each academic year.
           </p>
           {/* CMS-edit-end */}
           
@@ -149,20 +149,20 @@ const Team = () => {
               rel="noopener noreferrer"
               className="university-btn-primary"
             >
-              Express Interest
+              Apply
             </a>
           </div>
           
           <div className="mt-12 text-center">
             <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Stay updated with committee opportunities and exclusive insights about investment banking careers.
+              If you are interested in working with us on a project, please send us a email we will be in touch to discuss more details. 
             </p>
             <div className="flex justify-center">
               <a 
                 href="/contact"
                 className="university-btn-primary"
               >
-                Join Our Mailing List
+                Email Us
               </a>
             </div>
           </div>
