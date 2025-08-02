@@ -372,7 +372,7 @@ const Home = () => {
             <h2 className="text-3xl font-heading font-bold text-background mb-4">
               Team Expertise and Experience
             </h2>
-            <p className="text-lg text-background">
+            <p className="text-base text-background">
               Our members come from leading firms in IB and Finance
             </p>
             {/* CMS-edit-end */}
