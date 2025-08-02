@@ -300,19 +300,19 @@ const Home = () => {
                   className="absolute inset-0 transition-opacity duration-1000"
                   style={{ opacity: currentImageIndex === 0 ? 1 : 0 }}
                 >
-                  <img src={codeMonitor} alt="Code on monitor" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/f8b32782-b1cf-4055-99e1-bd53aa1d2528.png" alt="Student welcome fair event" className="w-full h-full object-cover" />
                 </div>
                 <div 
                   className="absolute inset-0 transition-opacity duration-1000"
                   style={{ opacity: currentImageIndex === 1 ? 1 : 0 }}
                 >
-                  <img src={lightbulb} alt="Innovation lightbulb" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/a9873450-f4b1-4211-827b-a69c2d130621.png" alt="Finance students group photo" className="w-full h-full object-cover" />
                 </div>
                 <div 
                   className="absolute inset-0 transition-opacity duration-1000"
                   style={{ opacity: currentImageIndex === 2 ? 1 : 0 }}
                 >
-                  <img src={codingLaptop} alt="Coding on laptop" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/e5e4d4ab-877f-46f6-ab70-60420ff55429.png" alt="Students working in meeting room" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
