@@ -270,7 +270,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
             <div className="space-y-6">
               <div className="p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50">
                 <h3 className="text-3xl font-bold text-foreground mb-4 text-center">Our Mission</h3>
@@ -294,8 +294,8 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="relative order-first lg:order-last">
-              <div className="relative w-full h-[500px] bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl overflow-hidden border-8 border-primary/30 shadow-2xl">
+            <div className="relative order-first lg:order-last h-full">
+              <div className="relative w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl overflow-hidden border-8 border-primary/30 shadow-2xl">
                 <div 
                   className="absolute inset-0 transition-opacity duration-1000"
                   style={{ opacity: currentImageIndex === 0 ? 1 : 0 }}
