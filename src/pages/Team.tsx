@@ -74,52 +74,54 @@ const Team = () => {
             {teamMembers.map((member, index) => (
               <div 
                 key={index}
-                className="university-card text-center group focus-within:ring-2 focus-within:ring-ring"
+                className="university-card text-center group focus-within:ring-2 focus-within:ring-ring flex flex-col h-full"
                 tabIndex={0}
                 aria-label={`Team member: ${member.name}, ${member.position}`}
               >
-                <div className="relative mb-4">
+                <h3 className="text-lg font-semibold text-foreground mb-4">
+                  {member.name}
+                </h3>
+                
+                <div className="flex-1 mb-4">
                   <img
                     src={member.image}
                     alt={`${member.name} - ${member.position}`}
-                    className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-primary/10 group-hover:border-primary/30 transition-smooth"
+                    className="w-full aspect-square rounded-lg object-cover border-4 border-primary/10 group-hover:border-primary/30 transition-smooth"
                     loading="lazy"
                   />
                 </div>
                 
-                <h3 className="text-lg font-semibold text-foreground mb-1">
-                  {member.name}
-                </h3>
-                
-                <p className="text-foreground font-medium mb-3">
-                  {member.position}
-                </p>
-                
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  {member.bio}
-                </p>
-                
-                <div className="flex justify-center space-x-3">
-                  {member.linkedin && (
-                    <a
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center w-8 h-8 bg-university-blue/10 text-university-blue rounded-full hover:bg-university-blue hover:text-white transition-smooth focus-visible:focus"
-                      aria-label={`${member.name}'s LinkedIn profile`}
-                    >
-                      <Linkedin size={16} />
-                    </a>
-                  )}
-                  {member.email && (
-                    <a
-                      href={`mailto:${member.email}`}
-                      className="inline-flex items-center justify-center w-8 h-8 bg-university-blue/10 text-university-blue rounded-full hover:bg-university-blue hover:text-white transition-smooth focus-visible:focus"
-                      aria-label={`Email ${member.name}`}
-                    >
-                      <Mail size={16} />
-                    </a>
-                  )}
+                <div className="mt-auto space-y-2">
+                  <p className="text-foreground font-medium text-sm">
+                    {member.position}
+                  </p>
+                  
+                  <p className="text-muted-foreground text-xs leading-tight">
+                    {member.bio}
+                  </p>
+                  
+                  <div className="flex justify-center space-x-2 pt-2">
+                    {member.linkedin && (
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center w-7 h-7 bg-university-blue/10 text-university-blue rounded-full hover:bg-university-blue hover:text-white transition-smooth focus-visible:focus"
+                        aria-label={`${member.name}'s LinkedIn profile`}
+                      >
+                        <Linkedin size={14} />
+                      </a>
+                    )}
+                    {member.email && (
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="inline-flex items-center justify-center w-7 h-7 bg-university-blue/10 text-university-blue rounded-full hover:bg-university-blue hover:text-white transition-smooth focus-visible:focus"
+                        aria-label={`Email ${member.name}`}
+                      >
+                        <Mail size={14} />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
