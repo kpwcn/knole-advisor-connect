@@ -281,13 +281,13 @@ const Home = () => {
             {sponsors.map((sponsor, index) => (
               <div 
                 key={index}
-                className="flex items-center justify-center p-4 bg-background rounded-lg border border-border transition-all duration-200 hover:scale-105"
+                className="flex items-center justify-center transition-all duration-200 hover:scale-105"
               >
-                <div className="w-16 h-16 bg-muted rounded flex items-center justify-center">
-                  <span className="text-xs font-medium text-muted-foreground text-center">
-                    {sponsor.name.split(' ')[0]}
-                  </span>
-                </div>
+                <img
+                  src={sponsor.logo}
+                  alt={sponsor.name}
+                  className="h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-200"
+                />
               </div>
             ))}
           </div>
