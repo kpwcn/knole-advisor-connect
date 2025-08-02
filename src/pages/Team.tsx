@@ -136,7 +136,7 @@ const Team = () => {
           <h2 className="text-3xl font-heading font-bold text-foreground mb-4">
             Interested in Joining Our Analyst Class?
           </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-base text-muted-foreground mb-8 max-w-2xl mx-auto">
             We're always looking for passionate students to help shape the future of 
             Knole Advisory. Analyst applications open at the start of each academic year.
           </p>
@@ -154,7 +154,7 @@ const Team = () => {
           </div>
           
           <div className="mt-12 text-center">
-            <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+            <p className="text-base text-muted-foreground mb-6 max-w-2xl mx-auto">
               If you are interested in working with us on a project, please send us a email we will be in touch to discuss more details. 
             </p>
             <div className="flex justify-center">
