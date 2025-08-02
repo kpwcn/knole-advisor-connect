@@ -369,10 +369,10 @@ const Home = () => {
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             {/* CMS-edit-start::sponsors-title */}
-            <h2 className="text-3xl font-heading font-bold text-primamry mb-4">
+            <h2 className="text-3xl font-heading font-bold text-background mb-4">
               Team Expertise and Experience
             </h2>
-            <p className="text-lg text-primamry">
+            <p className="text-lg text-background">
               Our members come from leading firms in IB and Finance
             </p>
             {/* CMS-edit-end */}
