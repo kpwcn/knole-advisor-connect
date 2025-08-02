@@ -27,13 +27,13 @@ const About = () => {
 
       {/* Mission Statement */}
       <section className="py-16 relative bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/89e98e58-9e6f-470f-b0e3-09baa2d72dd5.png)'}}>
-        <div className="absolute inset-0 bg-primary/70"></div>
+        <div className="absolute inset-0 bg-primary/80"></div>
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               {/* CMS-edit-start::mission-statement */}
               <h2 className="text-3xl font-heading font-bold text-foreground mb-6">
-                Our Story
+                Who We Are
               </h2>
               <div className="prose prose-lg text-muted-foreground space-y-4">
                 <p>
@@ -118,7 +118,7 @@ const About = () => {
             <div className="prose prose-lg text-primary mx-auto space-y-6">
               <p>
                 <DecryptedText
-                  text="Knole Advisory was founded in 2024 by a group of ambitious UCL students who recognized the need for better career preparation and networking opportunities in the finance and consulting sectors. What started as informal study groups has grown into one of UCL's most active and respected student societies."
+                  text="Knole Advisory was founded in 2024 by a group of UCL & LSE students who recognized the need for better career preparation and networking opportunities in the investment banking. What started as informal study groups has grown into one of London's most active and respected student societies."
                   animateOn="view"
                   revealDirection="center"
                   speed={50}
@@ -129,8 +129,7 @@ const About = () => {
               </p>
               <p>
                 <DecryptedText
-                  text="Knole Advisory’s project slate spans Vietnam, Hong Kong, the UK and Malaysia, where we support high-growth companies whose combined valuations exceed US $15 billion and range from advanced-manufacturing to fintech and renewable energy. For students, that geographic and sector diversity translates into truly consequential work: each mandate demands region-specific market research, nuanced cross-border valuation modelling and real dialogue with C-suite executives."
-                  animateOn="view"
+                  text="We have client projects spaning US, Singapore, Vietnam, Hong Kong, the UK and Malaysia, where we support high-growth companies whose combined valuations exceed US $15 billion and range from advanced-manufacturing to fintech and renewable energy."
                   revealDirection="center"
                   speed={50}
                   maxIterations={20}
@@ -163,7 +162,7 @@ const About = () => {
             <h2 className="text-3xl font-heading font-bold text-foreground mb-4">
               Committee Structure
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto">
               Our dedicated committee works tirelessly to provide exceptional experiences for all members
             </p>
             {/* CMS-edit-end */}
