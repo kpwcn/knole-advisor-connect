@@ -2,10 +2,8 @@ import Layout from '@/components/Layout/Layout';
 import { Target, Users, Award, Calendar, Calculator, FileText, BarChart3, Handshake } from 'lucide-react';
 import ShinyText from '@/components/ui/shiny-text';
 import DecryptedText from '@/components/ui/DecryptedText';
-
 const About = () => {
-  return (
-    <Layout title="About - Knole Advisory">
+  return <Layout title="About - Knole Advisory">
       {/* Hero Section */}
       <section className="py-16 bg-gradient-accent">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,7 +24,9 @@ const About = () => {
       </section>
 
       {/* Mission Statement */}
-      <section className="py-16 relative bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/89e98e58-9e6f-470f-b0e3-09baa2d72dd5.png)'}}>
+      <section className="py-16 relative bg-cover bg-center" style={{
+      backgroundImage: 'url(/lovable-uploads/89e98e58-9e6f-470f-b0e3-09baa2d72dd5.png)'
+    }}>
         <div className="absolute inset-0 bg-primary/80"></div>
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -48,12 +48,7 @@ const About = () => {
                   professionals. Through our comprehensive programs, we prepare students for 
                   successful careers in investment banking and finance.
                 </p>
-                <p>
-                  Every analyst earns a place through an exacting selection process that 
-                  values curiosity, precision, and relentless drive, then receives senior-banker 
-                  mentorship to ensure clients gain insights that stand up in the boardroom.
-                  We welcome students from all academic disciplines who share our passion.
-                </p>
+                <p>Every analyst earns a place in our teams through a highly selective process that values curiosity, passion and hard work. We welcome students from all academic disciplines who share our passion.</p>
               </div>
               {/* CMS-edit-end */}
             </div>
@@ -117,36 +112,13 @@ const About = () => {
             </h2>
             <div className="prose prose-lg text-primary mx-auto space-y-6">
               <p>
-                <DecryptedText
-                  text="Knole Advisory was founded in 2024 by a group of UCL & LSE students who recognized the need for better career preparation and networking opportunities in the investment banking. What started as informal study groups has grown into one of London's most active and respected student societies."
-                  animateOn="view"
-                  revealDirection="center"
-                  speed={50}
-                  maxIterations={20}
-                  className="text-primary"
-                  encryptedClassName="text-muted-foreground"
-                />
+                <DecryptedText text="Knole Advisory was founded in 2024 by a group of UCL & LSE students who recognized the need for better career preparation and networking opportunities in the investment banking. What started as informal study groups has grown into one of London's most active and respected student societies." animateOn="view" revealDirection="center" speed={50} maxIterations={20} className="text-primary" encryptedClassName="text-muted-foreground" />
               </p>
               <p>
-                <DecryptedText
-                  text="We have client projects spaning US, Singapore, Vietnam, Hong Kong, the UK and Malaysia, where we support high-growth companies whose combined valuations exceed US $15 billion and range from advanced-manufacturing to fintech and renewable energy."
-                  revealDirection="center"
-                  speed={50}
-                  maxIterations={20}
-                  className="text-primary"
-                  encryptedClassName="text-muted-foreground"
-                />
+                <DecryptedText text="We have client projects spaning US, Singapore, Vietnam, Hong Kong, the UK and Malaysia, where we support high-growth companies whose combined valuations exceed US $15 billion and range from advanced-manufacturing to fintech and renewable energy." revealDirection="center" speed={50} maxIterations={20} className="text-primary" encryptedClassName="text-muted-foreground" />
               </p>
               <p>
-                <DecryptedText
-                  text="The result is hands-on exposure to live, multi-jurisdiction deals experience that sharpens analytical judgement and financial fluency far beyond what a classroom or short internship can deliver."
-                  animateOn="view"
-                  revealDirection="center"
-                  speed={50}
-                  maxIterations={20}
-                  className="text-primary"
-                  encryptedClassName="text-muted-foreground"
-                />
+                <DecryptedText text="The result is hands-on exposure to live, multi-jurisdiction deals experience that sharpens analytical judgement and financial fluency far beyond what a classroom or short internship can deliver." animateOn="view" revealDirection="center" speed={50} maxIterations={20} className="text-primary" encryptedClassName="text-muted-foreground" />
               </p>
             </div>
             {/* CMS-edit-end */}
@@ -243,8 +215,6 @@ const About = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default About;
