@@ -125,7 +125,7 @@ const About = () => {
               Committee Structure
             </h2>
             <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-              Our dedicated committee works tirelessly to provide exceptional experiences for all members
+              Our dedicated committee works to provide exceptional learning experiences for all our members
             </p>
             {/* CMS-edit-end */}
           </div>
@@ -191,13 +191,13 @@ const About = () => {
               <div className="text-center">
                 <h3 className="text-xl font-semibold mb-3">Integrity</h3>
                 <p className="text-primary-foreground/90">
-                  Maintaining the highest ethical standards in all our activities
+                  Maintaining the highest standards in all our activities
                 </p>
               </div>
               <div className="text-center">
                 <h3 className="text-xl font-semibold mb-3">Impact</h3>
                 <p className="text-primary-foreground/90">
-                  Making a meaningful difference in our members' careers and lives
+                  Making a meaningful difference in our members' professional careers
                 </p>
               </div>
             </div>
