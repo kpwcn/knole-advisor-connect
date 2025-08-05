@@ -149,8 +149,7 @@ const Home = () => {
         <div className="relative z-20 max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             {/* CMS-edit-start::hero-title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-white drop-shadow-lg">Knole Advisory
-Student Investment Banking Society</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-white drop-shadow-lg">Knole Advisory<br />Student Investment Banking Society</h1>
             {/* CMS-edit-end */}
             
             {/* CMS-edit-start::hero-subtitle */}
