@@ -19,7 +19,14 @@ interface Sponsor {
 }
 const DynamicText = () => {
   const texts = ['Industrials', 'Healthcare', 'Financial Institutions Group', 'Energy & Infrastructure', 'TMT', 'Consumer Retail'];
-  const fonts = ['font-playfair', 'font-montserrat', 'font-oswald', 'font-raleway', 'font-merriweather', 'font-roboto'];
+  const fontStyles = [
+    'font-playfair font-bold italic text-6xl md:text-7xl lg:text-8xl',
+    'font-montserrat font-extrabold text-5xl md:text-6xl lg:text-7xl tracking-wide',
+    'font-oswald font-light text-7xl md:text-8xl lg:text-9xl tracking-wider',
+    'font-raleway font-medium text-6xl md:text-7xl lg:text-8xl tracking-tight',
+    'font-merriweather font-black text-5xl md:text-6xl lg:text-7xl',
+    'font-roboto font-thin text-6xl md:text-7xl lg:text-8xl tracking-widest'
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   useEffect(() => {
@@ -33,7 +40,7 @@ const DynamicText = () => {
     return () => clearInterval(interval);
   }, [texts.length]);
   return <div className="text-center py-12">
-      <div className={`text-6xl md:text-7xl lg:text-8xl font-bold text-white transition-all duration-500 ${fonts[currentIndex]} ${isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0 animate-fade-out'}`}>
+      <div className={`text-white transition-all duration-500 ${fontStyles[currentIndex]} ${isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0 animate-fade-out'}`}>
         {texts[currentIndex]}
       </div>
     </div>;
