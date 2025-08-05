@@ -55,7 +55,7 @@ const Team = () => {
       {/* Team Grid */}
       <section className="py-16 bg-white">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-3 gap-8 justify-items-center max-w-4xl mx-auto">
             {teamMembers.map((member, index) => <div key={index} className="university-card text-center group focus-within:ring-2 focus-within:ring-ring flex flex-col h-full" tabIndex={0} aria-label={`Team member: ${member.name}, ${member.position}`}>
                 <h3 className="text-lg font-semibold text-foreground mb-4">
                   {member.name}
