@@ -36,14 +36,6 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/hao-ping-yau-9a391016a/",
       email: "chair@knoleadvisory.org",
       image: "/lovable-uploads/haoping.jpg"
-    },
-    {
-      name: "Vincent Pang",
-      position: "Events & Outreach Director",
-      bio: "UCL Sustainable Built Environments, Energy and Resources",
-      linkedin: "https://linkedin.com/in/",
-      email: "events@knoleadvisory.org",
-      image: ""
     }
   ];
   // CMS-edit-end
