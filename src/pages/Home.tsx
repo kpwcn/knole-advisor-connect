@@ -151,18 +151,18 @@ const Home = () => {
             {/* CMS-edit-start::hero-title */}
             <h1 className="font-heading font-bold mb-6 leading-tight text-white drop-shadow-lg text-center">
               <div className="text-6xl md:text-7xl lg:text-8xl font-garamond">Knole Advisory</div>
-              <div className="text-3xl md:text-4xl lg:text-5xl">Student Investment Banking Society</div>
+              <div className="text-3xl md:text-4xl lg:text-5xl mt-4">Student Investment Banking Society</div>
             </h1>
             {/* CMS-edit-end */}
             
             {/* CMS-edit-start::hero-subtitle */}
-            <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed drop-shadow-md">
+            <p className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed drop-shadow-md mt-8">
               From concept to execution. London's first student-run investment bank, building 
               future dealmakers with real-world M&A experience.
             </p>
             {/* CMS-edit-end */}
 
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-4">
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZ86Rhmu8G6kW-wonOlSxF9g3R0D3ma8d-usNSDq7fyT1DnQ/viewform" target="_blank" rel="noopener noreferrer">
                 <Button id="join-cta" size="lg" className="bg-white text-primary hover:bg-white/90 px-8 py-3 text-lg font-semibold shadow-lg">
                   Apply Today
