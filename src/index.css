@@ -182,4 +182,14 @@
     outline: 2px solid hsl(var(--ring));
     outline-offset: 2px;
   }
+  
+  /* Infinite scroll animation */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
