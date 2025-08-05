@@ -64,12 +64,12 @@ export default {
 				body: ['Amplitude', 'sans-serif'],
 				sans: ['Amplitude', 'sans-serif'],
 				garamond: ['EB Garamond', 'serif'],
-				playfair: ['Amplitude', 'sans-serif'],
-				montserrat: ['Amplitude', 'sans-serif'],
-				oswald: ['Amplitude', 'sans-serif'],
-				raleway: ['Amplitude', 'sans-serif'],
-				merriweather: ['Amplitude', 'sans-serif'],
-				roboto: ['Amplitude', 'sans-serif']
+				playfair: ['Playfair Display', 'serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
+				oswald: ['Oswald', 'sans-serif'],
+				raleway: ['Raleway', 'sans-serif'],
+				merriweather: ['Merriweather', 'serif'],
+				roboto: ['Roboto', 'sans-serif']
 			},
 			maxWidth: {
 				container: 'var(--container-max)'
