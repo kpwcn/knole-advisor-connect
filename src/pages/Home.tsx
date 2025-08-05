@@ -19,13 +19,13 @@ interface Sponsor {
 }
 const DynamicText = () => {
   const texts = ['Industrials', 'Healthcare', 'Financial Institutions Group', 'Energy & Infrastructure', 'TMT', 'Consumer Retail'];
-  const fontStyles = [
-    'font-playfair font-bold italic',
-    'font-montserrat font-extrabold tracking-wide',
-    'font-oswald font-light tracking-wider',
-    'font-raleway font-medium tracking-tight',
-    'font-merriweather font-black',
-    'font-roboto font-thin tracking-widest'
+  const fonts = [
+    'font-playfair',
+    'font-montserrat',
+    'font-oswald',
+    'font-raleway',
+    'font-merriweather',
+    'font-roboto'
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
@@ -41,7 +41,7 @@ const DynamicText = () => {
   }, [texts.length]);
   return <div className="text-center py-12">
       <div className="h-32 flex items-center justify-center">
-        <div className={`text-4xl md:text-5xl lg:text-6xl text-white transition-all duration-500 ${fontStyles[currentIndex]} ${isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0 animate-fade-out'}`}>
+        <div className={`text-4xl md:text-5xl lg:text-6xl text-white transition-all duration-500 ${fonts[currentIndex]} ${isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0 animate-fade-out'}`}>
           {texts[currentIndex]}
         </div>
       </div>
