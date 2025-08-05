@@ -63,6 +63,7 @@ export default {
 				heading: ['Amplitude', 'sans-serif'],
 				body: ['Amplitude', 'sans-serif'],
 				sans: ['Amplitude', 'sans-serif'],
+				garamond: ['EB Garamond', 'serif'],
 				playfair: ['Amplitude', 'sans-serif'],
 				montserrat: ['Amplitude', 'sans-serif'],
 				oswald: ['Amplitude', 'sans-serif'],

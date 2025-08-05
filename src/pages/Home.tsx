@@ -150,7 +150,7 @@ const Home = () => {
           <div className="text-center max-w-4xl mx-auto">
             {/* CMS-edit-start::hero-title */}
             <h1 className="font-heading font-bold mb-6 leading-tight text-white drop-shadow-lg text-center">
-              <div className="text-5xl md:text-6xl lg:text-7xl">Knole Advisory</div>
+              <div className="text-6xl md:text-7xl lg:text-8xl font-garamond">Knole Advisory</div>
               <div className="text-3xl md:text-4xl lg:text-5xl">Student Investment Banking Society</div>
             </h1>
             {/* CMS-edit-end */}
