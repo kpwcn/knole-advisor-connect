@@ -122,6 +122,9 @@ const Team = () => {
                   <div className="bg-white p-2 rounded-lg">
                     <img src="/lovable-uploads/0dde37cb-2f8e-403c-81a9-f677c5e5facc.png" alt="King's College London" className="h-16 w-16 object-contain hover:scale-110 transition-smooth" />
                   </div>
+                  <div className="bg-white p-2 rounded-lg">
+                    <img src="/lovable-uploads/17143560-3f2b-466c-a215-c408721b107b.png" alt="London Business School" className="h-16 w-16 object-contain hover:scale-110 transition-smooth" />
+                  </div>
                 </div>
                 
                 {/* Duplicate set for seamless loop */}
@@ -146,6 +149,9 @@ const Team = () => {
                   </div>
                   <div className="bg-white p-2 rounded-lg">
                     <img src="/lovable-uploads/0dde37cb-2f8e-403c-81a9-f677c5e5facc.png" alt="King's College London" className="h-16 w-16 object-contain hover:scale-110 transition-smooth" />
+                  </div>
+                  <div className="bg-white p-2 rounded-lg">
+                    <img src="/lovable-uploads/17143560-3f2b-466c-a215-c408721b107b.png" alt="London Business School" className="h-16 w-16 object-contain hover:scale-110 transition-smooth" />
                   </div>
                 </div>
               </div>
