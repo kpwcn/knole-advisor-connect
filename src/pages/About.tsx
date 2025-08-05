@@ -140,7 +140,7 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Executive Board</h3>
-                    <p className="text-muted-foreground text-sm">President, Treasurer, COO</p>
+                    <p className="text-muted-foreground text-sm">President, Chairperson</p>
                   </div>
                 </div>
 
