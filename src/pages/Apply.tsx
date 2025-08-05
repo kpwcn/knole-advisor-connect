@@ -16,14 +16,14 @@ const Apply = () => {
         {/* Application Section */}
         <div className="bg-white text-primary py-20">
           <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
               2025 Analyst Applications Now{" "}
               <div className="inline-block">
                 <TextType
                   text="OPEN"
                   speed={150}
                   loop={false}
-                  className="text-4xl md:text-5xl font-bold"
+                  className="text-4xl md:text-5xl font-bold text-primary"
                 />
               </div>
             </h2>
