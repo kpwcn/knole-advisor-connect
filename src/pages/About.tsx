@@ -36,18 +36,8 @@ const About = () => {
                 Who We Are
               </h2>
               <div className="prose prose-lg text-muted-foreground space-y-4">
-                <p>
-                  Knole Advisory is a UCL born student-driven M&A hub, dedicated to giving students 
-                  a genuine seat at the deal table. Through a highly selective process, we assemble 
-                  cross-disciplinary teams from all backgrounds to deliver rigorous, statistics-led 
-                  advisory to global firms on real buy-side and sell-side mandates.
-                </p>
-                <p>
-                  We believe that every student deserves access to high-quality career guidance, 
-                  skill development opportunities, and meaningful connections with industry 
-                  professionals. Through our comprehensive programs, we prepare students for 
-                  successful careers in investment banking and finance.
-                </p>
+                <p>Knole Advisory is a UCL & LSE born, student-run M&A society, dedicated to giving members a genuine seat at the deal table. Through a highly selective process, we assemble cross-disciplinary teams from all backgrounds to deliver rigorous, statistics-led advisory to global firms on real buy-side and sell-side mandates.</p>
+                <p>We provide our team members with access to high-quality career guidance, real deal flow exposure, and meaningful connections with industry professionals. Through our comprehensive programs, we help members prepare for successful careers in investment banking and finance.</p>
                 <p>Every analyst earns a place in our teams through a highly selective process that values curiosity, passion and hard work. We welcome students from all academic disciplines who share our passion.</p>
               </div>
               {/* CMS-edit-end */}
