@@ -25,7 +25,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/18ccdbae-c468-4394-b7f8-7f4f55d6a9dd.png" 
               alt="Knole Advisory Logo" 
-              className="h-10 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
