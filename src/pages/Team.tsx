@@ -134,93 +134,98 @@ const Team = () => {
           </div>
           
           <div className="flex justify-center">
-            <div className="inline-flex items-center overflow-hidden bg-white p-4 rounded-lg w-full max-w-4xl">
-              <div className="flex items-center animate-[slide_20s_linear_infinite] space-x-4">
-                {/* First set */}
-                <div className="bg-white p-2 rounded-lg flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/3e6c63c3-5868-4fd8-9dec-0d19134067f5.png" 
-                    alt="UCL" 
-                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
-                  />
+            <div className="overflow-hidden bg-white p-4 rounded-lg w-full max-w-4xl">
+              <div className="infinite-scroll flex">
+                {/* First set of logos */}
+                <div className="flex space-x-4 flex-shrink-0">
+                  <div className="bg-white p-2 rounded-lg">
+                    <img 
+                      src="/lovable-uploads/3e6c63c3-5868-4fd8-9dec-0d19134067f5.png" 
+                      alt="UCL" 
+                      className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                    />
+                  </div>
+                  <div className="bg-white p-2 rounded-lg">
+                    <img 
+                      src="/lovable-uploads/22935965-1fdb-4cf8-925d-b86a8e97c98e.png" 
+                      alt="LSE" 
+                      className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                    />
+                  </div>
+                  <div className="bg-white p-2 rounded-lg">
+                    <img 
+                      src="/lovable-uploads/e881c7ab-7f60-46d0-89e5-9445ce3f47c3.png" 
+                      alt="Imperial College London" 
+                      className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                    />
+                  </div>
+                  <div className="bg-white p-2 rounded-lg">
+                    <img 
+                      src="/lovable-uploads/035bcf27-a4d6-4870-bb5a-96d74af83756.png" 
+                      alt="Oxford University" 
+                      className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                    />
+                  </div>
+                  <div className="bg-white p-2 rounded-lg">
+                    <img 
+                      src="/lovable-uploads/c14fbff3-5e1e-4985-a9f4-1d267163a6bc.png" 
+                      alt="Cambridge University" 
+                      className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                    />
+                  </div>
+                  <div className="bg-white p-2 rounded-lg">
+                    <img 
+                      src="/lovable-uploads/55f8c9df-9cc3-4e12-bfb9-8322fed734c2.png" 
+                      alt="Warwick University" 
+                      className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                    />
+                  </div>
                 </div>
-                <div className="bg-white p-2 rounded-lg flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/22935965-1fdb-4cf8-925d-b86a8e97c98e.png" 
-                    alt="LSE" 
-                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
-                  />
-                </div>
-                <div className="bg-white p-2 rounded-lg flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/e881c7ab-7f60-46d0-89e5-9445ce3f47c3.png" 
-                    alt="Imperial College London" 
-                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
-                  />
-                </div>
-                <div className="bg-white p-2 rounded-lg flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/035bcf27-a4d6-4870-bb5a-96d74af83756.png" 
-                    alt="Oxford University" 
-                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
-                  />
-                </div>
-                <div className="bg-white p-2 rounded-lg flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/c14fbff3-5e1e-4985-a9f4-1d267163a6bc.png" 
-                    alt="Cambridge University" 
-                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
-                  />
-                </div>
-                <div className="bg-white p-2 rounded-lg flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/55f8c9df-9cc3-4e12-bfb9-8322fed734c2.png" 
-                    alt="Warwick University" 
-                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
-                  />
-                </div>
+                
                 {/* Duplicate set for seamless loop */}
-                <div className="bg-white p-2 rounded-lg flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/3e6c63c3-5868-4fd8-9dec-0d19134067f5.png" 
-                    alt="UCL" 
-                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
-                  />
-                </div>
-                <div className="bg-white p-2 rounded-lg flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/22935965-1fdb-4cf8-925d-b86a8e97c98e.png" 
-                    alt="LSE" 
-                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
-                  />
-                </div>
-                <div className="bg-white p-2 rounded-lg flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/e881c7ab-7f60-46d0-89e5-9445ce3f47c3.png" 
-                    alt="Imperial College London" 
-                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
-                  />
-                </div>
-                <div className="bg-white p-2 rounded-lg flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/035bcf27-a4d6-4870-bb5a-96d74af83756.png" 
-                    alt="Oxford University" 
-                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
-                  />
-                </div>
-                <div className="bg-white p-2 rounded-lg flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/c14fbff3-5e1e-4985-a9f4-1d267163a6bc.png" 
-                    alt="Cambridge University" 
-                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
-                  />
-                </div>
-                <div className="bg-white p-2 rounded-lg flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/55f8c9df-9cc3-4e12-bfb9-8322fed734c2.png" 
-                    alt="Warwick University" 
-                    className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
-                  />
+                <div className="flex space-x-4 flex-shrink-0">
+                  <div className="bg-white p-2 rounded-lg">
+                    <img 
+                      src="/lovable-uploads/3e6c63c3-5868-4fd8-9dec-0d19134067f5.png" 
+                      alt="UCL" 
+                      className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                    />
+                  </div>
+                  <div className="bg-white p-2 rounded-lg">
+                    <img 
+                      src="/lovable-uploads/22935965-1fdb-4cf8-925d-b86a8e97c98e.png" 
+                      alt="LSE" 
+                      className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                    />
+                  </div>
+                  <div className="bg-white p-2 rounded-lg">
+                    <img 
+                      src="/lovable-uploads/e881c7ab-7f60-46d0-89e5-9445ce3f47c3.png" 
+                      alt="Imperial College London" 
+                      className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                    />
+                  </div>
+                  <div className="bg-white p-2 rounded-lg">
+                    <img 
+                      src="/lovable-uploads/035bcf27-a4d6-4870-bb5a-96d74af83756.png" 
+                      alt="Oxford University" 
+                      className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                    />
+                  </div>
+                  <div className="bg-white p-2 rounded-lg">
+                    <img 
+                      src="/lovable-uploads/c14fbff3-5e1e-4985-a9f4-1d267163a6bc.png" 
+                      alt="Cambridge University" 
+                      className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                    />
+                  </div>
+                  <div className="bg-white p-2 rounded-lg">
+                    <img 
+                      src="/lovable-uploads/55f8c9df-9cc3-4e12-bfb9-8322fed734c2.png" 
+                      alt="Warwick University" 
+                      className="h-16 w-16 object-contain hover:scale-110 transition-smooth"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

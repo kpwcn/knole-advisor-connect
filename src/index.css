@@ -184,7 +184,11 @@
   }
   
   /* Infinite scroll animation */
-  @keyframes slide {
+  .infinite-scroll {
+    animation: scroll 25s linear infinite;
+  }
+  
+  @keyframes scroll {
     0% {
       transform: translateX(0);
     }
