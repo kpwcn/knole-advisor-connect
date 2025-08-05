@@ -7,55 +7,47 @@ import TextType from '@/components/ui/text-type';
 import codeMonitor from '@/assets/code-monitor.jpg';
 import lightbulb from '@/assets/lightbulb.jpg';
 import codingLaptop from '@/assets/coding-laptop.jpg';
-
 interface Stats {
   members: number;
   eventsPerYear: number;
   sponsors: number;
 }
-
 interface Sponsor {
   name: string;
   logo: string;
   tier: 'gold' | 'silver';
 }
-
 const DynamicText = () => {
   const texts = ['Industrials', 'Healthcare', 'Financial Institutions Group', 'Energy & Infrastructure', 'TMT', 'Consumer Retail'];
   const fonts = ['font-playfair', 'font-montserrat', 'font-oswald', 'font-raleway', 'font-merriweather', 'font-roboto'];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setIsVisible(false);
       setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+        setCurrentIndex(prevIndex => (prevIndex + 1) % texts.length);
         setIsVisible(true);
       }, 250);
     }, 3000);
-
     return () => clearInterval(interval);
   }, [texts.length]);
-
-  return (
-    <div className="text-center py-12">
-      <div className={`text-6xl md:text-7xl lg:text-8xl font-bold text-white transition-all duration-500 ${fonts[currentIndex]} ${
-        isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0 animate-fade-out'
-      }`}>
+  return <div className="text-center py-12">
+      <div className={`text-6xl md:text-7xl lg:text-8xl font-bold text-white transition-all duration-500 ${fonts[currentIndex]} ${isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0 animate-fade-out'}`}>
         {texts[currentIndex]}
       </div>
-    </div>
-  );
+    </div>;
 };
-
 const Home = () => {
-  const [stats, setStats] = useState<Stats>({ members: 0, eventsPerYear: 0, sponsors: 0 });
+  const [stats, setStats] = useState<Stats>({
+    members: 0,
+    eventsPerYear: 0,
+    sponsors: 0
+  });
   const [sponsors, setSponsors] = useState<Sponsor[]>([]);
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [videoError, setVideoError] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   useEffect(() => {
     // Simulate fetching data from JSON files
     const fetchData = () => {
@@ -67,21 +59,37 @@ const Home = () => {
       });
 
       // Mock sponsors data
-      setSponsors([
-        { name: 'Goldman Sachs', logo: '/lovable-uploads/Goldman-Sachs-1869.png', tier: 'gold' },
-        { name: 'JP Morgan', logo: '/lovable-uploads/jpm.png', tier: 'gold' },
-        { name: 'EFG', logo: '/lovable-uploads/EFG_Logo_RGB_pos_medium.png', tier: 'gold' },
-        { name: 'HSBC', logo: '/lovable-uploads/HSBC_logo_(2018).svg.png', tier: 'silver' },
-        { name: 'CIMB', logo: '/lovable-uploads/CIMB-Logo.png', tier: 'silver' },
-        { name: 'KPMG', logo: '/lovable-uploads/Logo_of_KPMG.svg.png', tier: 'silver' }
-      ]);
+      setSponsors([{
+        name: 'Goldman Sachs',
+        logo: '/lovable-uploads/Goldman-Sachs-1869.png',
+        tier: 'gold'
+      }, {
+        name: 'JP Morgan',
+        logo: '/lovable-uploads/jpm.png',
+        tier: 'gold'
+      }, {
+        name: 'EFG',
+        logo: '/lovable-uploads/EFG_Logo_RGB_pos_medium.png',
+        tier: 'gold'
+      }, {
+        name: 'HSBC',
+        logo: '/lovable-uploads/HSBC_logo_(2018).svg.png',
+        tier: 'silver'
+      }, {
+        name: 'CIMB',
+        logo: '/lovable-uploads/CIMB-Logo.png',
+        tier: 'silver'
+      }, {
+        name: 'KPMG',
+        logo: '/lovable-uploads/Logo_of_KPMG.svg.png',
+        tier: 'silver'
+      }]);
     };
-
     fetchData();
 
     // Auto-cycle through images every 3 seconds
     const imageInterval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 3);
+      setCurrentImageIndex(prevIndex => (prevIndex + 1) % 3);
     }, 3000);
 
     // Test if video file exists
@@ -98,18 +106,14 @@ const Home = () => {
         setVideoError(true);
       }
     };
-
     testVideoFile();
-
     return () => clearInterval(imageInterval);
   }, []);
-
   const handleVideoLoad = () => {
     console.log('✅ Video loaded successfully');
     setVideoLoaded(true);
     setVideoError(false);
   };
-
   const handleVideoError = (e: any) => {
     console.error('❌ Video failed to load:', e);
     console.error('Video error details:', {
@@ -121,40 +125,22 @@ const Home = () => {
     setVideoError(true);
     setVideoLoaded(false);
   };
-
   const handleVideoCanPlay = () => {
     console.log('🎬 Video can start playing');
   };
-
-  return (
-    <Layout title="Knole Advisory - Student Finance & Consulting Society">
+  return <Layout title="Knole Advisory - Student Finance & Consulting Society">
       {/* Hero Section */}
       <section className="relative text-primary-foreground min-h-screen flex items-center overflow-hidden">
         
         
         {/* Background - Video or Fallback */}
-        {!videoError ? (
-          <video
-            className="absolute inset-0 w-full h-full object-cover z-0"
-            autoPlay
-            muted
-            loop
-            playsInline
-            aria-hidden="true"
-            onLoadedData={handleVideoLoad}
-            onError={handleVideoError}
-            onCanPlay={handleVideoCanPlay}
-            preload="auto"
-          >
+        {!videoError ? <video className="absolute inset-0 w-full h-full object-cover z-0" autoPlay muted loop playsInline aria-hidden="true" onLoadedData={handleVideoLoad} onError={handleVideoError} onCanPlay={handleVideoCanPlay} preload="auto">
             {/* FIXED: Remove spaces and /public/ prefix */}
             <source src="/videos/london2.mp4" type="video/mp4" />
             {/* Alternative with URL encoding for spaces if you can't rename */}
             <source src="/public/videos/london2.mp4" type="video/mp4" />
-          </video>
-        ) : (
-          /* Fallback gradient background */
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-dark to-secondary z-0" />
-        )}
+          </video> : (/* Fallback gradient background */
+      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-dark to-secondary z-0" />)}
         
         {/* Overlay - Adjust opacity based on video status */}
         <div className={`absolute inset-0 z-10 ${videoLoaded ? 'bg-primary/60' : 'bg-primary/80'}`} />
@@ -163,9 +149,8 @@ const Home = () => {
         <div className="relative z-20 max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             {/* CMS-edit-start::hero-title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-white drop-shadow-lg">
-              Knole Advisory – Student Investment Banking Society
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-white drop-shadow-lg">Knole Advisory
+Student Investment Banking Society</h1>
             {/* CMS-edit-end */}
             
             {/* CMS-edit-start::hero-subtitle */}
@@ -177,11 +162,7 @@ const Home = () => {
 
             <div className="flex justify-center">
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZ86Rhmu8G6kW-wonOlSxF9g3R0D3ma8d-usNSDq7fyT1DnQ/viewform" target="_blank" rel="noopener noreferrer">
-                <Button 
-                  id="join-cta"
-                  size="lg"
-                  className="bg-white text-primary hover:bg-white/90 px-8 py-3 text-lg font-semibold shadow-lg"
-                >
+                <Button id="join-cta" size="lg" className="bg-white text-primary hover:bg-white/90 px-8 py-3 text-lg font-semibold shadow-lg">
                   Apply Today
                 </Button>
               </a>
@@ -199,14 +180,7 @@ const Home = () => {
                 <Users size={32} className="text-white" />
               </div>
               <div className="text-5xl font-bold text-primary mb-2" id="members-stat">
-                <TextType 
-                  text={['6+', '6+', '6+']}
-                  typingSpeed={100}
-                  pauseDuration={4000}
-                  deletingSpeed={50}
-                  showCursor={false}
-                  className="text-5xl font-bold text-primary"
-                />
+                <TextType text={['6+', '6+', '6+']} typingSpeed={100} pauseDuration={4000} deletingSpeed={50} showCursor={false} className="text-5xl font-bold text-primary" />
               </div>
               {/* CMS-edit-start::members-label */}
               <p className="text-primary/80 font-medium">Sectors Covered</p>
@@ -218,15 +192,7 @@ const Home = () => {
                 <Calendar size={32} className="text-white" />
               </div>
               <div className="text-5xl font-bold text-primary mb-2" id="events-stat">
-                <TextType 
-                  text={['20+', '20+', '20+']}
-                  typingSpeed={100}
-                  pauseDuration={4000}
-                  deletingSpeed={50}
-                  showCursor={false}
-                  className="text-5xl font-bold text-primary"
-                  initialDelay={500}
-                />
+                <TextType text={['20+', '20+', '20+']} typingSpeed={100} pauseDuration={4000} deletingSpeed={50} showCursor={false} className="text-5xl font-bold text-primary" initialDelay={500} />
               </div>
               {/* CMS-edit-start::events-label */}
               <p className="text-primary/80 font-medium">Partner Universities</p>
@@ -238,15 +204,7 @@ const Home = () => {
                 <Briefcase size={32} className="text-white" />
               </div>
               <div className="text-5xl font-bold text-primary mb-2" id="sponsors-stat">
-                <TextType 
-                  text={['12+', '12+', '12+']}
-                  typingSpeed={100}
-                  pauseDuration={4000}
-                  deletingSpeed={50}
-                  showCursor={false}
-                  className="text-5xl font-bold text-primary"
-                  initialDelay={1000}
-                />
+                <TextType text={['12+', '12+', '12+']} typingSpeed={100} pauseDuration={4000} deletingSpeed={50} showCursor={false} className="text-5xl font-bold text-primary" initialDelay={1000} />
               </div>
               {/* CMS-edit-start::sponsors-label */}
               <p className="text-primary/80 font-medium">Industry Partners</p>
@@ -274,13 +232,7 @@ const Home = () => {
             <div className="space-y-6">
               <div className="p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50">
                 <div className="text-3xl font-bold text-foreground mb-4 text-center">
-                  <TextType 
-                    text={["Our Members", "Our Members", "Our Members"]}
-                    typingSpeed={75}
-                    pauseDuration={1500}
-                    showCursor={true}
-                    cursorCharacter="|"
-                  />
+                  <TextType text={["Our Members", "Our Members", "Our Members"]} typingSpeed={75} pauseDuration={1500} showCursor={true} cursorCharacter="|" />
                 </div>
                 <p className="text-muted-foreground leading-relaxed text-center">
                   Live, mentored deal experience. Build valuation models from scratch, brief founders, and graduate with desk-ready skills and standout CV lines.
@@ -289,14 +241,7 @@ const Home = () => {
 
               <div className="p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50">
                 <div className="text-3xl font-bold text-foreground mb-4 text-center">
-                  <TextType 
-                    text={["Our Clients", "Our Clients", "Our Clients"]}
-                    typingSpeed={75}
-                    pauseDuration={1500}
-                    showCursor={true}
-                    cursorCharacter="|"
-                    initialDelay={500}
-                  />
+                  <TextType text={["Our Clients", "Our Clients", "Our Clients"]} typingSpeed={75} pauseDuration={1500} showCursor={true} cursorCharacter="|" initialDelay={500} />
                 </div>
                 <p className="text-muted-foreground leading-relaxed text-center">
                   Pro bono, data-driven M&A support that delivers investor-grade models, curated buyer lists, and student perspectives you can act on.
@@ -305,14 +250,7 @@ const Home = () => {
 
               <div className="p-6 bg-primary/90 backdrop-blur-sm rounded-2xl border border-border/50">
                 <div className="text-3xl font-bold text-foreground text-center mb-4">
-                  <TextType 
-                    text={["Our Sponsors", "Our Sponsors", "Our Sponsors"]}
-                    typingSpeed={75}
-                    pauseDuration={1500}
-                    showCursor={true}
-                    cursorCharacter="|"
-                    initialDelay={1000}
-                  />
+                  <TextType text={["Our Sponsors", "Our Sponsors", "Our Sponsors"]} typingSpeed={75} pauseDuration={1500} showCursor={true} cursorCharacter="|" initialDelay={1000} />
                 </div>
                 <p className="text-muted-foreground text-center leading-relaxed">
                   A direct pipeline to top student talent and high-visibility branding across our reports, deal deliverables, and campus channels. Measurable impact, zero fluff.
@@ -322,22 +260,19 @@ const Home = () => {
 
             <div className="relative order-first lg:order-last h-full">
               <div className="relative w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl overflow-hidden border-8 border-primary/30 shadow-2xl">
-                <div 
-                  className="absolute inset-0 transition-opacity duration-1000"
-                  style={{ opacity: currentImageIndex === 0 ? 1 : 0 }}
-                >
+                <div className="absolute inset-0 transition-opacity duration-1000" style={{
+                opacity: currentImageIndex === 0 ? 1 : 0
+              }}>
                   <img src="/lovable-uploads/f8b32782-b1cf-4055-99e1-bd53aa1d2528.png" alt="Student welcome fair event" className="w-full h-full object-cover" />
                 </div>
-                <div 
-                  className="absolute inset-0 transition-opacity duration-1000"
-                  style={{ opacity: currentImageIndex === 1 ? 1 : 0 }}
-                >
+                <div className="absolute inset-0 transition-opacity duration-1000" style={{
+                opacity: currentImageIndex === 1 ? 1 : 0
+              }}>
                   <img src="/lovable-uploads/a9873450-f4b1-4211-827b-a69c2d130621.png" alt="Finance students group photo" className="w-full h-full object-cover" />
                 </div>
-                <div 
-                  className="absolute inset-0 transition-opacity duration-1000"
-                  style={{ opacity: currentImageIndex === 2 ? 1 : 0 }}
-                >
+                <div className="absolute inset-0 transition-opacity duration-1000" style={{
+                opacity: currentImageIndex === 2 ? 1 : 0
+              }}>
                   <img src="/lovable-uploads/e5e4d4ab-877f-46f6-ab70-60420ff55429.png" alt="Students working in meeting room" className="w-full h-full object-cover" />
                 </div>
               </div>
@@ -379,18 +314,9 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-            {sponsors.map((sponsor, index) => (
-              <div 
-                key={index}
-                className="flex items-center justify-center transition-all duration-200 hover:scale-105"
-              >
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  className="h-12 w-auto object-contain transition-all duration-200"
-                />
-              </div>
-            ))}
+            {sponsors.map((sponsor, index) => <div key={index} className="flex items-center justify-center transition-all duration-200 hover:scale-105">
+                <img src={sponsor.logo} alt={sponsor.name} className="h-12 w-auto object-contain transition-all duration-200" />
+              </div>)}
           </div>
         </div>
       </section>
@@ -409,18 +335,13 @@ const Home = () => {
           
           <div className="flex justify-center">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZ86Rhmu8G6kW-wonOlSxF9g3R0D3ma8d-usNSDq7fyT1DnQ/viewform" target="_blank" rel="noopener noreferrer">
-              <Button 
-                size="lg"
-                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8 py-3"
-              >
+              <Button size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8 py-3">
                 Join Today
               </Button>
             </a>
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Home;
