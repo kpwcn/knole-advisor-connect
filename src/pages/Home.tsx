@@ -39,9 +39,9 @@ const DynamicText = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, [texts.length]);
-  return <div className="text-center py-12">
-      <div className="h-32 flex items-center justify-center">
-        <div className={`text-4xl md:text-5xl lg:text-6xl text-white transition-all duration-500 ${fonts[currentIndex]} ${isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0 animate-fade-out'}`}>
+  return <div className="text-center py-8">
+      <div className="h-28 flex items-center justify-center">
+        <div className={`text-5xl md:text-6xl lg:text-7xl text-white transition-all duration-500 ${fonts[currentIndex]} ${isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0 animate-fade-out'}`}>
           {texts[currentIndex]}
         </div>
       </div>
