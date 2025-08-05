@@ -60,15 +60,15 @@ export default {
 				}
 			},
 			fontFamily: {
-				heading: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
-				body: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
-				sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
-				playfair: ['Playfair Display', 'serif'],
-				montserrat: ['Montserrat', 'sans-serif'],
-				oswald: ['Oswald', 'sans-serif'],
-				raleway: ['Raleway', 'sans-serif'],
-				merriweather: ['Merriweather', 'serif'],
-				roboto: ['Roboto Slab', 'serif']
+				heading: ['Amplitude', 'sans-serif'],
+				body: ['Amplitude', 'sans-serif'],
+				sans: ['Amplitude', 'sans-serif'],
+				playfair: ['Amplitude', 'sans-serif'],
+				montserrat: ['Amplitude', 'sans-serif'],
+				oswald: ['Amplitude', 'sans-serif'],
+				raleway: ['Amplitude', 'sans-serif'],
+				merriweather: ['Amplitude', 'sans-serif'],
+				roboto: ['Amplitude', 'sans-serif']
 			},
 			maxWidth: {
 				container: 'var(--container-max)'
