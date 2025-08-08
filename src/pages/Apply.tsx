@@ -28,8 +28,8 @@ const Apply = () => {
               </div>
             </h2>
             <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              Join our exclusive community of ambitious students passionate about finance and consulting. 
-              Gain access to exclusive events, networking opportunities, and career development resources 
+              Join our exclusive community of ambitious students passionate about investment banking. 
+              Work on global deals in chosen sector teams and gain access to development resources 
               that will accelerate your journey to top-tier firms.
             </p>
             <Button 
@@ -57,7 +57,7 @@ const Apply = () => {
               </div>
             </h2>
             <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              The application period for our VP opportunity has ended, and we are no longer accepting submissions.
+              The application period for our VP opportunity has not begun yet.
             </p>
           </div>
         </div>
