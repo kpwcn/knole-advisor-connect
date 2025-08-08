@@ -23,7 +23,7 @@ const Apply = () => {
                   text="OPEN"
                   speed={150}
                   loop={false}
-                  className="text-4xl md:text-5xl font-bold text-primary"
+                  className="text-4xl md:text-5xl font-bold text-blue-600"
                 />
               </div>
             </h2>
