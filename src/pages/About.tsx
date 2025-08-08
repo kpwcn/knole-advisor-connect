@@ -45,7 +45,7 @@ const About = () => {
             
             <div className="university-card">
               <div className="space-y-6">
-                <h3 className="text-xl font-semibold text-foreground text-center mb-6">Learn how to:</h3>
+                <h3 className="text-xl font-semibold text-foreground text-center mb-6">You Will:</h3>
                 
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-10 h-10 bg-university-blue/10 rounded-lg flex items-center justify-center">
@@ -105,7 +105,7 @@ const About = () => {
                 Knole Advisory was founded in 2024 by a group of UCL & LSE students who recognized the need for better career preparation and networking opportunities in the investment banking. What started as informal study groups has grown into one of London's most active and effective student societies.
               </p>
               <p className="animate-fade-in text-center">
-                We have client projects spaning US, Singapore, Vietnam, Hong Kong, the UK and Malaysia, where we support high-growth companies whose combined valuations exceed US $15 billion and range from advanced-manufacturing to fintech and renewable energy.
+                As a Knole Analyst, you will work on client M&A projects spanning the US, Singapore, Vietnam, Hong Kong, the UK and Malaysia, where we support high-growth companies whose combined valuations exceed US$15 billion and range from advanced manufacturing to fintech and renewable energy.
               </p>
               <p className="animate-fade-in text-center">
                 The result is hands-on exposure to live, multi-jurisdiction deals experience that sharpens analytical judgement and financial fluency far beyond what a classroom or short internship can deliver.
