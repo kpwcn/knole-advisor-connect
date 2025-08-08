@@ -183,6 +183,11 @@
     outline-offset: 2px;
   }
   
+  /* Hide Lovable badge globally */
+  #lovable-badge {
+    display: none !important;
+  }
+  
   /* Infinite scroll animation */
   .infinite-scroll {
     animation: scroll 25s linear infinite;
