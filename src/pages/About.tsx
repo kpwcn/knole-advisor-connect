@@ -101,14 +101,14 @@ const About = () => {
               Our Story
             </h2>
             <div className="prose prose-lg text-primary mx-auto space-y-6">
-              <p>
-                <DecryptedText text="Knole Advisory was founded in 2024 by a group of UCL & LSE students who recognized the need for better career preparation and networking opportunities in the investment banking. What started as informal study groups has grown into one of London's most active and respected student societies." animateOn="view" revealDirection="center" speed={50} maxIterations={20} className="text-primary" encryptedClassName="text-muted-foreground" />
+              <p className="animate-fade-in text-center">
+                Knole Advisory was founded in 2024 by a group of UCL & LSE students who recognized the need for better career preparation and networking opportunities in the investment banking. What started as informal study groups has grown into one of London's most active and respected student societies.
               </p>
-              <p>
-                <DecryptedText text="We have client projects spaning US, Singapore, Vietnam, Hong Kong, the UK and Malaysia, where we support high-growth companies whose combined valuations exceed US $15 billion and range from advanced-manufacturing to fintech and renewable energy." revealDirection="center" speed={50} maxIterations={20} className="text-primary" encryptedClassName="text-muted-foreground" />
+              <p className="animate-fade-in text-center">
+                We have client projects spaning US, Singapore, Vietnam, Hong Kong, the UK and Malaysia, where we support high-growth companies whose combined valuations exceed US $15 billion and range from advanced-manufacturing to fintech and renewable energy.
               </p>
-              <p>
-                <DecryptedText text="The result is hands-on exposure to live, multi-jurisdiction deals experience that sharpens analytical judgement and financial fluency far beyond what a classroom or short internship can deliver." animateOn="view" revealDirection="center" speed={50} maxIterations={20} className="text-primary" encryptedClassName="text-muted-foreground" />
+              <p className="animate-fade-in text-center">
+                The result is hands-on exposure to live, multi-jurisdiction deals experience that sharpens analytical judgement and financial fluency far beyond what a classroom or short internship can deliver.
               </p>
             </div>
             {/* CMS-edit-end */}
