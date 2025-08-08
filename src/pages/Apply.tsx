@@ -1,8 +1,10 @@
 import Layout from "@/components/Layout/Layout";
 import { Button } from "@/components/ui/button";
 import TextType from "@/components/ui/text-type";
+
 const Apply = () => {
-  return <Layout>
+  return (
+    <Layout>
       <div className="min-h-screen bg-background text-foreground">
         {/* Hero Section */}
         <div className="bg-background text-foreground py-20">
@@ -17,16 +19,31 @@ const Apply = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
               2025 Analyst Applications Now{" "}
               <div className="inline-block">
-                <TextType text="OPEN" speed={150} loop={false} className="text-4xl md:text-5xl font-bold text-primary" />
+                <TextType
+                  text="OPEN"
+                  speed={150}
+                  loop={false}
+                  className="text-4xl md:text-5xl font-bold text-primary"
+                />
               </div>
             </h2>
-            <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">Join our exclusive community of ambitious students passionate about investment banking. Work in a sector team and gain access to career development resources that will accelerate your journey to top-tier firms.</p>
-            <Button size="lg" className="text-lg px-8 py-4" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdZ86Rhmu8G6kW-wonOlSxF9g3R0D3ma8d-usNSDq7fyT1DnQ/viewform?usp=header', '_blank')}>
+            <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+              Join our exclusive community of ambitious students passionate about investment banking. 
+              Work in a sector team and gain access to career development resources 
+              that will accelerate your journey to top-tier firms.
+            </p>
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-4"
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdZ86Rhmu8G6kW-wonOlSxF9g3R0D3ma8d-usNSDq7fyT1DnQ/viewform?usp=header', '_blank')}
+            >
               Apply Now
             </Button>
           </div>
         </div>
       </div>
-    </Layout>;
+    </Layout>
+  );
 };
+
 export default Apply;
