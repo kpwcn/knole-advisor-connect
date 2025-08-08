@@ -37,7 +37,7 @@ const About = () => {
               </h2>
               <div className="prose prose-lg text-muted-foreground space-y-4">
                 <p>Knole Advisory is London's first and only student-run investment bank, dedicated to giving members a genuine seat at the deal table. Through a highly selective process, we assemble cross-disciplinary teams from all backgrounds to deliver rigorous, statistics-led advisory to global firms on real buy-side and sell-side mandates.</p>
-                <p>We provide our team members with access to high-quality career guidance, real deal flow exposure, and meaningful connections with industry professionals. Through our comprehensive programs, we help members prepare for successful careers in investment banking and finance.</p>
+                <p>Our platform is an accelerator for ambitious professionals aiming for top-tier roles in investment banking and finance. We provide members with a fully immersive experience in the full transaction lifecycle, gaining direct involvement in global deal flow and developing deep, sector-specific expertise. We couple this practical experience with technical ability development, ensuring our team is not just prepared, but positioned to excel in the competitive landscape of investment banking and finance.</p>
                 <p>Every analyst earns a place in our teams through a highly selective process that values curiosity, passion and hard work. We welcome students from all academic disciplines who share our passion.</p>
               </div>
               {/* CMS-edit-end */}
@@ -102,7 +102,7 @@ const About = () => {
             </h2>
             <div className="prose prose-lg text-primary mx-auto space-y-6">
               <p className="animate-fade-in text-center">
-                Knole Advisory was founded in 2024 by a group of UCL & LSE students who recognized the need for better career preparation and networking opportunities in the investment banking. What started as informal study groups has grown into one of London's most active and respected student societies.
+                Knole Advisory was founded in 2024 by a group of UCL & LSE students who recognized the need for better career preparation and networking opportunities in the investment banking. What started as informal study groups has grown into one of London's most active and effective student societies.
               </p>
               <p className="animate-fade-in text-center">
                 We have client projects spaning US, Singapore, Vietnam, Hong Kong, the UK and Malaysia, where we support high-growth companies whose combined valuations exceed US $15 billion and range from advanced-manufacturing to fintech and renewable energy.
