@@ -28,8 +28,8 @@ const Apply = () => {
               </div>
             </h2>
             <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              Join our exclusive community of ambitious students passionate about finance and consulting. 
-              Gain access to exclusive events, networking opportunities, and career development resources 
+              Join our exclusive community of ambitious students passionate about investment banking. 
+              Work in a sector team and gain access to career development resources 
               that will accelerate your journey to top-tier firms.
             </p>
             <Button 
@@ -39,26 +39,6 @@ const Apply = () => {
             >
               Apply Now
             </Button>
-          </div>
-        </div>
-
-        {/* VP Application Section */}
-        <div className="bg-white text-primary py-20">
-          <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
-              2025 VP Applications Now{" "}
-              <div className="inline-block">
-                <TextType
-                  text="CLOSED"
-                  speed={150}
-                  loop={false}
-                  className="text-4xl md:text-5xl font-bold text-red-700"
-                />
-              </div>
-            </h2>
-            <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              The application period for our VP opportunity has ended, and we are no longer accepting submissions.
-            </p>
           </div>
         </div>
       </div>
