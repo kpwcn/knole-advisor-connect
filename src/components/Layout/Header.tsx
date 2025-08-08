@@ -23,7 +23,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center focus-visible:focus">
             <img 
-              src="/lovable-uploads/18ccdbae-c468-4394-b7f8-7f4f55d6a9dd.png" 
+              src="/lovable-uploads/04649b97-ef10-4e32-9916-56617173f779.png" 
               alt="Knole Advisory Logo" 
               className="h-16 w-auto"
             />
