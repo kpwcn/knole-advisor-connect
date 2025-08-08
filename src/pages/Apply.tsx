@@ -52,14 +52,12 @@ const Apply = () => {
                   text="CLOSED"
                   speed={150}
                   loop={false}
-                  className="text-4xl md:text-5xl font-bold text-primary"
+                  className="text-4xl md:text-5xl font-bold text-red-700"
                 />
               </div>
             </h2>
             <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              Join our exclusive community of ambitious students passionate about finance and consulting. 
-              Gain access to exclusive events, networking opportunities, and career development resources 
-              that will accelerate your journey to top-tier firms.
+              The application period for our VP opportunity has ended, and we are no longer accepting submissions.
             </p>
           </div>
         </div>
