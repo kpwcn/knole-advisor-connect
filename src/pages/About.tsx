@@ -3,7 +3,11 @@ import { Target, Users, Award, Calendar, Calculator, FileText, BarChart3, Handsh
 import ShinyText from '@/components/ui/shiny-text';
 import DecryptedText from '@/components/ui/DecryptedText';
 const About = () => {
-  return <Layout title="About - Knole Advisory">
+  return <Layout 
+    title="About Knole Advisory - UCL Investment Banking Society"
+    description="Learn about Knole Advisory's mission to develop future investment banking leaders. Discover our history, structure, and values at UCL's premier finance society."
+    canonical="https://www.knole.org.uk/about"
+  >
       {/* Hero Section */}
       <section className="py-16 bg-gradient-accent">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">

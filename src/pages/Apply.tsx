@@ -4,7 +4,11 @@ import TextType from "@/components/ui/text-type";
 
 const Apply = () => {
   return (
-    <Layout>
+    <Layout 
+      title="Apply to Join Knole Advisory - Investment Banking Applications"
+      description="Apply to become a member of UCL's premier investment banking society. Join our analyst or VP programs and gain valuable finance experience."
+      canonical="https://www.knole.org.uk/apply"
+    >
       <div className="min-h-screen bg-background text-foreground">
         {/* Hero Section */}
         <div className="bg-background text-foreground py-20">

@@ -51,7 +51,11 @@ const Contact = () => {
   };
 
   return (
-    <Layout title="Contact - Knole Advisory">
+    <Layout 
+      title="Contact Knole Advisory - Get in Touch"
+      description="Contact Knole Advisory for inquiries about membership, partnerships, or general questions. We're here to help with your investment banking journey."
+      canonical="https://www.knole.org.uk/contact"
+    >
       {/* Hero Section */}
       <section className="py-16 bg-gradient-accent">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">

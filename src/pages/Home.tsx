@@ -137,7 +137,11 @@ const Home = () => {
   const handleVideoCanPlay = () => {
     console.log('🎬 Video can start playing');
   };
-  return <Layout title="Knole Advisory - Student Finance & Consulting Society">
+  return <Layout 
+    title="Knole Advisory - UCL's Premier Student Investment Banking Society"
+    description="Join UCL's leading student investment banking society. Gain hands-on experience in valuation modeling, deal materials, and client presentations. Apply today."
+    canonical="https://www.knole.org.uk/"
+  >
       {/* Hero Section */}
       <section className="relative text-primary-foreground min-h-screen flex items-center overflow-hidden">
         

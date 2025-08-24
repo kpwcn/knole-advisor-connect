@@ -34,7 +34,11 @@ const Team = () => {
   }];
   // CMS-edit-end
 
-  return <Layout title="Committee - Knole Advisory">
+  return <Layout 
+    title="Meet Our Team - Knole Advisory Leadership"
+    description="Meet the executive committee and leadership team at Knole Advisory. Connect with experienced UCL students passionate about investment banking and finance."
+    canonical="https://www.knole.org.uk/team"
+  >
       {/* Hero Section */}
       <section className="py-16 bg-gradient-accent">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
